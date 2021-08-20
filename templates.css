@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100vw;
+}
+#mid_content {
+  padding: 20px;
+  display: flex;
+}
+#left_div {
+}
+
+#icon_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#home_icon {
+  background-color: #bfbfbf;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#search_icon {
+  margin-right: 12px;
+}
+
+#search_box {
+  background-color: #bfbfbf;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  margin-left: 10px;
+  color: #bfbfbf;
+  background-color: #f2f2f2;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+}
+#search_box input {
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  width: 120px;
+}
+#list_of_service {
+  height: 585px;
+  border: 1px solid none;
+  overflow-y: scroll;
+  width: 100%;
+  margin-top: 30px;
+  clear: both;
+}
+#list_of_service > div {
+  color: #c9c9c9;
+  font-size: 11px;
+  margin: 0px 0px 15px;
+}
+#list_of_service > p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #666666;
+  cursor: pointer;
+}
+#list_of_service > p:hover {
+  color: black;
+}
+#list_of_service > h3 {
+  margin-top: 30px;
+  cursor: pointer;
+}
+#main_content {
+  width: 100%;
+  margin-left: 20px;
+}
+#top {
+  width: 100%;
+}
+#main_content > #top > #first_Flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#main_content > #top > #second_Flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#main_content > #top > #third_Flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#main_content .overlay {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F51D8ycQOSpew9WIDP2Me_pexels-photo-373966-upload.png");
+
+  background-position: center center;
+  mix-blend-mode: multiply;
+  background-size: cover;
+
+  position: absolute;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 0 5px transparent;
+}
+#main_content .boxx {
+  height: 250px;
+  width: 100%;
+  opacity: 0.9;
+  background: rgb(39, 110, 218);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  margin: 10px;
+}
+#main_content h1 {
+  z-index: 1;
+  color: white;
+}
+
+#main_content #color_box01 {
+  width: 100%;
+}
+
+#main_content #color_box02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FTRLvmCoSQ9OYrG2r3Yfz_pexels-photo-474873.jpeg");
+  width: 100%;
+  background-size: cover;
+}
+
+#color_box02 > .overlay {
+  background: rgb(230, 39, 85);
+  background-size: cover;
+}
+
+#main_content #color_box03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fn8taW1kVSb2oOkq4wCye_exploreCoverImages%252FwHQewJl3Tku9OU6MW6X7_jwimshwif14-jeff-sheldon.jpg");
+  grid-area: c;
+  width: 33% !important;
+}
+#color_box03 > .overlay {
+  background: rgb(42, 111, 199);
+}
+#main_content #color_box04 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FNyowWcFoSfaj40BMWDtG_exploreCoverImages%252FHqdWGSA7QQqGE8avD2Ow_f3uyey6ours-nicolai-berntsen.jpg");
+  width: 33% !important;
+}
+#color_box04 > .overlay {
+  background: rgb(180, 29, 69);
+}
+#main_content #color_box05 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Ftn3tW8QrS75kVLwNoIHg_exploreCoverImages%252FmmGMuFSnyLwYE60isAwl_exploreCoverImages%252FbxZIdK7RQ226Ef4FDdOm_jufcqxgcxwa-samuel-zeller.jpg");
+  width: 33% !important;
+}
+#color_box05 > .overlay {
+  background-color: #666;
+}
+#main_content #color_box06 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FfNrd9uBlS46tkBy19ShQ_exploreCoverImages%252FXUbrYMmzQI2LWRxeiCJo_nasa.png");
+  grid-area: f;
+  width: 33%;
+}
+#color_box06 > .overlay {
+  background: rgb(247, 92, 30);
+}
+#main_content #color_box07 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FJawInXKTW2qpiT9Fhhfg_exploreCoverImages%252FZFxxi0tNSdG1u6tug6K3_9hi8ujmsdza-braden-collum.jpg");
+  grid-area: g;
+  width: 33%;
+}
+#color_box07 > .overlay {
+  background: cyan;
+}
+#main_content #color_box08 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FedOQmkPQcGd8CJartzsD_exploreCoverImages%252FjyrGFJGQb2kwL9iF9mK2_emtcwiq2txk-alan-emery.jpg");
+  grid-area: h;
+  width: 33%;
+}
+#color_box08 > .overlay {
+  background: yellow;
+}
+.mid_01 > h2 {
+  margin: 20px;
+  color: #666;
+}
+.mid_01 > .div_boxes h3 {
+  font-weight: 900;
+  text-align: center;
+}
+
+.mid_01 > .div_boxes > .img_plus_text {
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #888888;
+}
+.mid_01 .div_boxes i {
+  text-align: right;
+  color: white;
+  background-color: rgb(235, 37, 70);
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.mid_01 .div_boxes > .img_plus_text {
+  cursor: pointer;
+  margin: 15px;
+}
+.mid_01 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FTRLvmCoSQ9OYrG2r3Yfz_pexels-photo-474873.jpeg");
+}
+.mid_01 .div_boxes .img_div00 {
+  height: 140px !important;
+  width: 100%;
+
+  mix-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.mid_01 .div_boxes .img_div00:hover {
+  opacity: 0.8;
+}
+.mid_01 .div_boxes h3 {
+  margin: 5px;
+}
+.mid_01 .div_boxes p {
+  font-size: 14px;
+  color: rgb(160, 154, 154);
+}
+.mid_01 .div_boxes .img_div00 + div {
+  padding: 10px;
+}
+.mid_01 > .div_boxes {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 33%;
+  justify-content: center;
+  width: 100%;
+}
+.mid_01 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fov1cp3ToTz2FnXiM91dT_william-iven-19843-unsplash.jpg");
+}
+.mid_01 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fh1cprqPaTGa9wU6ynnzI_exploreCoverImages%252FtbKYQWtPTW2q1lBLf551_exploreCoverImages%252FJf3M5wTSSnC6SKG6TgrQ_25171507233_6a774fcfc3_k.jpg");
+}
+
+.mid_002 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FwZu6WoFpTwKU27RSTrbP_exploreCoverImages%252FpTXzLfrHQxGNZsHx2qVK_exploreCoverImages%252F0PzqYS7zRByV7jSagoeo_azztu531psm-jakob-owens.jpg");
+}
+.mid_002 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F2LWMIEY4S3q0vdFpGZLQ_exploreCoverImages%252FYp4H1qhxRMq7i5rSocDR_y02jex_b0o0-aaron-burden.jpg");
+}
+.mid_002 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fz22XguvRB6zLe8C7K0UA_tbvsc-xxnuw-raphael-koh.jpg");
+}
+.mid_003 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FLBoIUpzRe6Xjlr3Ghh0g_exploreCoverImages%252F9i5vidWERBuvRqglcBS0_event-1597531_1280.jpg");
+}
+.mid_003 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FPkXhlBvRu2aNaGbceKc5_exploreCoverImages%252F0vcOdULcTC293RKECSce_xxalfz6v9rq-robert-mathews.jpg");
+}
+.mid_003 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FzdmMsyAQou5WHE0gyuoQ_exploreCoverImages%252F1fHDLkrmQdOxV4oaoyA8_udodaha_mh8-annie-spratt.jpg");
+}
+.mid_004 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FXOawPuXfTnSDLgL7amOr_exploreCoverImages%252Fdxp8ILVR2imNYlk6lX3r_jpkfc5_d-di-davide-cantelli.jpg");
+}
+.mid_004 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FQZGOcH8FReaF6JtRyJkF_exploreCoverImages%252FqGARl5B7TKmyGxhhbsNK__c_i5gmzyr0-justin-veenema.jpg");
+}
+.mid_004 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FVziHvU67TGDYbFVu5uvM_exploreCoverImages%252FzgWPRxSBQmKnaZSFF0K9_exploreCoverImages%252Fgm5Usg0wRbaVd9nAeX8o_exploreCoverImages%252FmopX32y4S8gtq7lr8vQQ_iecsdu416pe-paul-nylund.jpg");
+}
+.mid_005 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FcOnNWME3RHyBuL6sH9x0_exploreCoverImages%252FHL3dFyPOTFWs8C3c3FIs_exploreCoverImages%252FxevfPIYlR5WLz6XTxt5E_exploreCoverImages%252FKWWAftgTNuySDeJ4ftTR__m-drbinfa4-eli-francis.jpg");
+}
+.mid_005 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FgzW37v0XT0igXLLiM4dw_exploreCoverImages%252FHFRil8ikQpCbFYJdf8Jk_ggetibd0hvo-tom-sodoge.jpg");
+}
+.mid_005 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FbEWPKxpwTh2sfWiHKhF9_chris-lawton-99165-unsplash.jpg");
+}
+.mid_006 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FNmBYkdJAQu2ZAcw4Qg4Z_exploreCoverImages%252F4h0SYn11QByaLAztYTKw_exploreCoverImages%252F2PUdqEAqS5q8PkBb9nR2_kslnvacfehs-ran-berkovich.jpg");
+}
+.mid_006 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FcNCXWyLQS2otMZ2ZOzQe_exploreCoverImages%252FLEncP9eVTBiNbdqNpqkL_ls0hg4l5joo-luis-llerena.jpg");
+}
+.mid_006 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FDD4RezRTrqzacazxxRGb_exploreCoverImages%252FB3NZV2HNRLWID6wWCAXR_ibpzztr3vxy-tristan-colangelo.jpg");
+}
+.mid_007 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FV9FlS9kSQmWhrtUBmfVx_pexels-photo-197309.jpeg");
+}
+.mid_007 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FV9zjDh3KRFGb9LiJRq5O_pexels-photo.jpg");
+}
+.mid_007 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FZX70BSeBTPWAAR07mcXI_lance-anderson-2669461.jpg");
+}
+.mid_008 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Ftn3tW8QrS75kVLwNoIHg_exploreCoverImages%252FmmGMuFSnyLwYE60isAwl_exploreCoverImages%252FbxZIdK7RQ226Ef4FDdOm_jufcqxgcxwa-samuel-zeller.jpg");
+}
+.mid_008 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FjzlAsQLdQPG9Z0L3wwcq_exploreCoverImages%252FCEowSY2cTXWJEXx0mmJw_exploreCoverImages%252F0qmFxvo1RzictU7CYCi9_syqm-ypaew4-tim-wright.jpg");
+}
+.mid_008 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Foawe9jnTN66twQFgomf0_office-supplies.jpeg");
+}
+.mid_009 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F51D8ycQOSpew9WIDP2Me_pexels-photo-373966-upload.png");
+}
+.mid_009 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FNyowWcFoSfaj40BMWDtG_exploreCoverImages%252FHqdWGSA7QQqGE8avD2Ow_f3uyey6ours-nicolai-berntsen.jpg");
+}
+.mid_009 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/.exploreCoverImages/ad037bef50029f8b4219dd50b56acfd0/dc6ff729");
+}
+.mid_010 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FXpMWc83VRouIaJxoVclz_yfmjalh1s6s-matheus-ferrero.jpg");
+}
+.mid_010 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FZLpwhAhxTh6CRCAAKqsw_exploreCoverImages%252FHhCgAyh2TaeFRmj1v61R_lcnwqwdz38g-d-ng-tr-n-qu-c.jpg");
+}
+.mid_010 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FKCPLHw0SDuUaDrbMgTf8_exploreCoverImages%252FkRZ4wFfwTm8twpqZsMhV_foko4dpxamq-eric-rothermel.jpg");
+}
+.mid_011 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fg4PoLJ2CR9iiLo4KcrPQ_pcrm_smiling.jpg");
+}
+.mid_011 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FvZ9rGRdXRvqkhwpFGWI3_lightcrm_smiling.jpg");
+}
+.mid_011 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages/kOfif4zTRVGsGBzX9Q8L_vasily-koloda-620886-unsplash.jpg");
+}
+.mid_012 .div_boxes .img_div01 {
+  height: 140px;
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Ffiy3qg4ATwW16OXngy6I_exploreCoverImages%252FMtNNmB9QhyPFUk3UaQ9r_speakers-744579_1920.jpg");
+}
+.mid_012 .div_boxes .img_div02 {
+  height: 140px;
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fivfkjz6rSnvf6Cj6P8rK_exploreCoverImages%252FshWTobcyRM69EfhQkpFd_books-1840975_1920.jpg");
+}
+.mid_012 .div_boxes .img_div03 {
+  height: 140px;
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FbDutAhFkT5a31KLK0L1U_exploreCoverImages%252FNAhQwwj4RK6opqfqwMir_o7bp1grkk1s-daniel-mccullough.jpg");
+}
