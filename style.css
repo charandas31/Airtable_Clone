@@ -567,6 +567,7 @@
     .flex {
         flex-direction: row;
         margin: auto;
+        justify-content: space-between;
     }
     .overflow-x {
         display: block;
