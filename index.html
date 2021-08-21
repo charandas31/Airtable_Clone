@@ -36,6 +36,29 @@
                 </div>
             </div>
         </nav> -->
+        <nav>
+            <div id="header" class="width">
+                <section class="hide"></section>
+                <div><img id = "airtable-logo" src = "./Public/header_logo.jpg"></div>
+                <div class="hide"> Product <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div class="hide">Solutions <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div class="hide">Enterprise</div>
+                <div class="hide"  style="flex-grow:1">Pricing</div>
+                <div class="hide">Resources<svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div >Contact Sales</div>
+                <div>Sign in</div>   
+                <div><button id="signup-btn-header" class="center blue signup-btn"><b>Sign up for free</b></button></div>
+                <div id='menu-bar' onclick = "toggle_list()"><img src="./Public/menu-icon.jpg"></div>
+            </div>
+    
+            <div style="clear:both;margin-top:2px;" id="menu-list">
+                <div style="border-top:2px solid rgb(184, 182, 182);"><p>Products</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr ></div>
+                <div><p>Solutions</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-25px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr ></div>
+                <div><p>Enterprise</p><hr ></div>
+                <div><p>Pricing</p><hr ></div>
+                <div><p>Resources</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr ></div>
+            </div>
+        </nav>
     </header>
     <main class="clear">
         <section id="main-slideshow">
@@ -160,10 +183,10 @@
             </div>
             <br>
             <div id="dot-buttons">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot" onclick="showSlideNo(0)"></span>
+                <span class="dot" onclick="showSlideNo(1)"></span>
+                <span class="dot" onclick="showSlideNo(2)"></span>
+                <span class="dot" onclick="showSlideNo(3)"></span>
             </div>
         </section>
         
@@ -268,8 +291,8 @@
 
         <section class="width">
             <h1 class="slidehead t-align" id="end-head">Take Airtable for a spin</h1>
-            <div class="signup-btn exp-btn t-align m-auto">
-                Sign up for free
+            <div class="signup-btn exp-btn t-align m-auto" id="bottom-sign-up-btn">
+                Get started for free
             </div>
             <p class="t-align">Airtable is free to use for teams of any size. We also offer paid plans with additional storage, features and support.</p>
             
@@ -277,116 +300,54 @@
         
     </main>
     <footer>
-        <!-- footer goes here  -->
+        <div id="footer" class="width">
+            <div>
+                <a href="#">
+                    <img src="./Public/logo_small.jpg">
+                </a>
+                
+            </div>
+    
+            <div>
+                <div><p>Product</p><div></div></div>
+                <div><p>Inspiration</p><div></div></div>
+                <div><p>Marketplace</p><div></div></div>
+                <div><p>Templates</p><div></div></div>
+                <div><p>universe</p><div></div></div>
+                <div><p>Pricing</p><div></div></div>
+            </div>
+    
+            <div>
+                <div><p>Events</p><div></div></div>
+                <div><p>Case studies</p><div></div></div>
+                <div><p>Security</p><div></div></div>
+                <div><p>Enterprise</p><div></div></div>
+                <div><p>API</p><div></div></div>
+                <div><p>Integrations</p><div></div></div>
+                <div><p>Download apps</p><div></div></div>
+            </div>
+    
+            <div>
+                <div><p>About</p><div></div></div>
+                <div><p>Careers</p><div></div></div>
+                <div><p>Blog</p><div></div></div>
+                <div><p>Creators magazine</p><div></div></div>
+                <div><p>Contact sales</p><div></div></div>
+                <div><p>Press</p><div></div></div>
+                <div><p>Twitter</p><div></div></div>
+            </div>
+    
+            <div>
+                <div><p style="border-bottom: 2px solid blue; color:blue">We're hiring!</p><div></div></div>
+                <div><p style="border-bottom: none; margin-bottom: 2px; padding-bottom: 0px; font-weight: 400;">Questions?</p><div></div></div>
+                <div><p style="margin-top: 2px; margin-bottom: 55px;">Explore our help center</p><div></div></div>
+                <div><p>Terms</p><div></div></div>
+                <div><p>Privacy</p><div></div></div>        
+                <div><p id="copyrights">@Airtable</p></div>
+            </div>
+        </div>
     </footer>
-    <script>
-        // window.onscroll = function() {myFunction()};
-        
-        // var navbar = document.getElementById("nav-bar");
-        // var sticky = document.getElementById("top-red-bar").offsetHeight;
-        
-        // function myFunction() {
-        //   if (window.pageYOffset >= sticky) {
-        //     navbar.classList.add("sticky")
-        //   } else {
-        //     navbar.classList.remove("sticky");
-        //   }
-        // }
-
-        // fade in for text
-        const txts=document.querySelector("#animate-text").children,
-               txtsLen=txts.length;
-           let index=0;
-          const textInTimer=4000,
-                textOutTimer=3500;
-
-         function animateText() {
-            for(let i=0; i<txtsLen-1; i++){
-              txts[i].classList.remove("text-in","text-out");  
-            }
-            txts[index].classList.add("text-in");
-
-            setTimeout(function(){
-                txts[index].classList.add("text-out");              
-            },textOutTimer)
-
-            setTimeout(function(){
-
-              if(index == txtsLen-2){
-                  index=0;
-                }
-               else{
-                   index++;
-                 }
-                animateText();
-            },textInTimer); 
-         }
-         
-         window.onload=animateText;
-
-
-        //  Carousel
-        
-        const slides = document.getElementsByClassName("car-slide");
-        const dots = document.getElementsByClassName("dot");
-        let currentSlide = 0;
-        
-        dots[currentSlide].className += " active"
-        function Slides(slideIndex) {
-            currentSlide = showSlides(slideIndex, currentSlide);
-        }
-
-        function showSlideNo(slideIndex) {
-            showSlides(slideIndex, currentSlide);
-        }
-
-        function showSlides(slideIndex, currentSlide) {
-            let i;
-            let newSlideIndex = currentSlide + slideIndex;
-            if (newSlideIndex > slides.length - 1) {newSlideIndex = 0}
-            if (newSlideIndex < 0) {newSlideIndex = slides.length-1}
-            for (i = 0; i < slides.length; i++) {
-                if ( i !== currentSlide ){
-                    slides[i].style.display = "none";  
-                }
-            }
-            dots[currentSlide].className = dots[currentSlide].className.replace(" active", "");
-            
-            let img1 = slides[currentSlide].getElementsByClassName('car-img');
-            let img2 = slides[newSlideIndex].getElementsByClassName('car-img');
-            dots[newSlideIndex].className += " active";
-            slides[newSlideIndex].style.display = "inline-flex";
-            img1.className += 'car-img-sliding';
-            img2.className += 'car-img-sliding';
-            if ( currentSlide < newSlideIndex ){
-                slides[currentSlide].className += " car-slide-out-inc ";
-                slides[newSlideIndex].className += " car-slide-in-inc ";
-                setTimeout(() => {
-                    slides[currentSlide].style.display = "none";
-                }, 600)
-                setTimeout(() => {
-                    slides[currentSlide].className.replace(" car-slide-out-inc ", "");
-                    slides[newSlideIndex].className.replace(" car-slide-in-inc ", "");
-                    img1.className.replace(' car-img-sliding', '');
-                    img2.className.replace(' car-img-sliding', '');
-                }, 500);
-            } else {
-                slides[currentSlide].className += " car-slide-in-dec ";
-                slides[newSlideIndex].className += " car-slide-out-dec ";
-                setTimeout(() => {
-                    slides[currentSlide].style.display = "none";
-                }, 400)
-                setTimeout(() => {
-                    slides[currentSlide].className.replace(" car-slide-in-dec ", "");
-                    slides[newSlideIndex].className.replace(" car-slide-out-dec ", "");
-                    
-                    img1.className.replace(' car-img-sliding', '');
-                    img2.className.replace(' car-img-sliding', '');
-                }, 600);
-            }
-            return newSlideIndex;
-        }        
-    </script>
+    <script src="index.js"></script>
 
 </body>
 

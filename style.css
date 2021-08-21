@@ -6,7 +6,7 @@
     }
 
     .width{
-        max-width: 1150px;
+        max-width: 1200px;
         width: 100%;
         margin: auto;
     }
@@ -78,7 +78,7 @@
     }
     #top-red-bar > p {
         font-weight: 600;
-        font-size: 0.95rem;
+        font-size: 16px;
         line-height: 1.5;
         margin: 0px;
     }
@@ -88,6 +88,103 @@
         padding-bottom: 1px;
         border-bottom:1px rgba(255, 255, 255, 0.452) solid; 
     }
+
+    /* Navbar */
+    nav {
+        background: white;
+        position: relative;
+        width:100%;
+        margin: auto;
+        padding:0px 0px;
+        z-index: 10;
+        font-weight: 600;
+    }
+    #header {
+        margin: auto;
+        width: 100%;
+        max-width: 1350px;
+        height: 50px;
+    }
+    #header > section:nth-of-type(1){
+        width: 5%;
+        height:30px;
+        float:left
+    }
+    #header > div {
+        float:left;
+    }
+    #airtable-logo {
+        width:120px; 
+        height:30px;  
+        float:left;
+    }
+    #header > div:nth-of-type(1) {
+        width:10%;
+        margin:10px;    
+        text-align: left;
+        float:left;
+    }
+    #header > div:nth-of-type(2) {
+        width:7%;
+        margin:15px 0px;
+    }
+    #header > div:nth-of-type(3) {
+        width:8%;   
+        margin:15px 0px;
+    }
+    #header > div:nth-of-type(4) {
+        width:7%;
+        margin:15px 0px;
+    }
+    #header > div:nth-of-type(5) {
+        width:20%;
+        
+        margin:15px 0px;
+    }
+    #header > div:nth-of-type(6) {
+        width:8%;
+        
+        margin:15px 0px;
+    }
+    #header > div:nth-of-type(7) {
+        width:9%;
+        
+        margin:15px 0px;
+    }
+    #header > div:nth-of-type(8) {
+        width:5%;
+        
+        margin:15px 0px;
+    }
+    #header > div:nth-of-type(9) {
+        width:11%;
+        
+        margin:5px 0px;
+    }
+    #signup-btn-header {
+        width:150px;
+        height:35px;
+        margin:1% 0.4%; 
+        font-size:15px;
+    }
+    #menu-bar {
+        width:3%;
+        margin:10px 5px;
+        display:none;
+    }
+    #menu-list {
+        padding:0% 3%;
+        font-size:19px;
+        display:none;   
+    }
+    #menu-list > div > p {
+        margin:15px 0px;
+    }
+    #menu-list  hr  {
+        position: relative;
+        border:1px solid rgb(235, 231, 231);
+    }
+
 
     /* Slide show */
     #main-slideshow {
@@ -101,7 +198,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
-        animation: 30s slider infinite;
+        animation: 15s slider infinite;
         animation-timing-function:ease-in;
     }
     @keyframes slider {
@@ -128,8 +225,8 @@
     }
     #animate-text span{
         display: none;
-        height: 1em;
-        font-size: 1em;
+        height: 80px;
+        font-size: 66px;
     }
     #animate-text span.text-in{
         display: inline-block;
@@ -172,12 +269,12 @@
         margin: 6% 12% 10%;
     }
     #main-text > h1 {
-        font-size: 4rem;
+        font-size: 66px;
         margin-bottom: 0px;
     }
     #main-text > p {
         margin: 10px 0px;
-        font-size: 1.4rem;
+        font-size: 22px;
         padding:0px 40% 0px 0px;
         line-height: 1.3;
         font-weight: 500;
@@ -186,7 +283,13 @@
 
     /* Below main slider */
     #trusted {
-        margin: 80px auto;
+        margin: 60px auto;
+    }
+    #trusted > h3{
+        color: #333333;
+        font-size: 24px;
+        margin: 0px auto 20px;
+        font-weight: 500;
     }
     #trusted img {
         margin: auto;
@@ -194,10 +297,10 @@
     /* Buttons */
     .exp-btn {
         cursor: pointer;
-        width: 250px;
+        width: 200px;
         border-width: 1px;
         border: 2px solid;
-        padding: 0.4em 0.5em;
+        padding: 1% 1%;
         font-size: 1.25em;
         border-radius: 25px;
         filter: brightness(1.15);
@@ -207,12 +310,16 @@
     }
     .signup-btn {
         margin-top: 40px;
-        padding: 10px 10px;
+        padding: 10px 0px;
         border: none;
         border-radius: 25px;
         color: white;
         background-color: #1283DA;
         filter: brightness(1.5);
+    }
+    #bottom-sign-up-btn {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     #trusted-big {
@@ -225,14 +332,7 @@
         display: none;
     }
 
-    /* .nav-links {
-        margin: 0rem 1rem;
-    }
-    .nav-links, .nav-links > a {
-        font-size: 1.1rem;
-        color: black;
-        text-decoration: none;
-    }
+    /* 
     .nav-links:hover, .nav-links a:hover {
         color: blue;
     }
@@ -270,18 +370,18 @@
         width: 58%;
     }
     #showcase .text {
-        max-width: 500px;
+        max-width: 400px;
         width: 40%;
     }
     #showcase .text > h1, .slidehead{
-        font-size: 3.5em;
+        font-size: 56px;
         line-height: 1;
         margin: 0px;
         padding-right: 5px;
     }
     #showcase .text > p, .slidepara{
-        margin-top: 20px;
-        font-size: 1.1em;
+        margin-top: 15px;
+        font-size: 20px;
         padding:0px 35px 10px 0px;
         line-height: 1.6;
         font-weight: 500;
@@ -297,7 +397,7 @@
         cursor: pointer;
         float: left;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 3em;
+        font-size: 44px;
         font-weight: 400;
         margin: 17% 1.5% -50%;
         width: 60px;
@@ -314,7 +414,7 @@
         height: 70px;
         margin: 16.55% 1% -50%;
         border-radius: 50%;
-        font-size: 3.15em;
+        font-size: 56px;
     }
     .next {
         float: right;
@@ -347,8 +447,7 @@
         border-radius: 10px;
     }
     #carousel {
-        width: 410%;
-        max-width: 4800px;
+        width: 4800px;
         height: 400px;
         display: flex;
         z-index: 0;
@@ -361,7 +460,7 @@
         max-width: 1200px;
         width: 100%;
         height: 100%;
-        padding: 0% 5% 0% 2%;
+        padding: 0% 1.5%;
     }
     .car-slide-in-inc {
         animation: slideInCarInc 1s forwards;
@@ -371,7 +470,7 @@
     }
     @keyframes slideInCarInc {
         from {
-            transform:translateX(100%);
+            transform:translateX(200%);
         }
         to {
             transform: translateX(0);
@@ -382,7 +481,7 @@
             transform:translateX(0);
         }
         to {
-            transform: translateX(-100%);
+            transform: translateX(-200%);
         }
     }
     .car-slide-in-dec {
@@ -393,18 +492,18 @@
     }
     @keyframes slideInCarDec {
         from {
-            transform:translateX(-100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-    @keyframes slideOutCarDec {
-        from {
             transform:translateX(0);
         }
         to {
             transform: translateX(100%);
+        }
+    }
+    @keyframes slideOutCarDec {
+        from {
+            transform:translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
         }
     }
 
@@ -412,7 +511,7 @@
         margin: 1% 1.25% 1.25% !important;
         height: 95% !important;
         width: 35% !important;
-        max-width: 300px;
+        max-width: 300px !important;
     }
     .car-slide > div {
         float: left;
@@ -421,7 +520,7 @@
         width: 50%;
         max-width: 425px;
         height: 125%;
-        margin: -5% 2% 0% 0% !important;
+        margin: -4% 2% 0% 0%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -432,15 +531,15 @@
         height: 90%;
         display: flex;
         flex-direction: column;
-        max-width: 550px;
+        max-width: 650px;
         color: white;
-        font-size: 18px;
+        font-size: 22px;
         line-height: 1.1;
         margin: 3% 1% 0% 0%;
     }
 
     .car-text > h1 {
-        width: 100%;
+        width: 625px;
         height: 50%;
         font-weight: 500;
     }
@@ -492,7 +591,7 @@
     .slidebox > p {
         font-weight: 600px;
         color: white;
-        font-size: 1.2em;
+        font-size: 18px;
         margin: 0px;
         padding: 0px 10px;
     }
@@ -508,10 +607,13 @@
     }
 
     .slidepara, .slidehead {
-        padding: 0px 15%;
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        
     }
     .slidepara {
-        font-size: 1.25em;
+        font-size: 18px;
         color: gray;
     }
     .slidehead {
@@ -554,16 +656,56 @@
     }
 
     #end-head ~ p {
-        font-size: 1em !important;
+        font-size: 16px;
         color: gray;
         font-weight: 500;
         margin: 30px 30% 100px 30%;
     }
+    
+
+    /* Footer */
+    #footer {
+        display:grid;
+        grid-template-columns: 20% 14% 14% 14% 14%;
+        grid-gap:4.25%;
+        font-size:14px;
+        height:300px;
+        width: 90%;
+        max-width: 1300px;
+        margin: 150px auto 50px;
+    }
+    #footer > div > img {
+        margin-right: 20px;
+    }
+    #footer > div {
+        text-align:center;
+    }
+    #footer > div {
+        color:rgb(124, 122, 122);
+    }
+    #footer > div > div {
+        display:flex;
+    }
+    #footer > div > div > p {
+        margin:5px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        border-bottom:2px solid rgb(224, 224, 224)
+    }
+    #footer > div > div > p:hover {
+        cursor: pointer;
+        border-bottom:2px solid rgb(117, 115, 115)
+    }
+    #copyrights{
+        font-size:12px;
+        font-weight:300;
+    }
+    
 }
 
 
 /* Navigation */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
     .flex {
         flex-direction: row;
         margin: auto;
@@ -572,13 +714,51 @@
     .overflow-x {
         display: block;
     }
+    .hide {
+        display:none;
+    }
+    #header > div:nth-of-type(7) {
+        width:37%;
+        float:left;
+        text-align: right;
+        padding-right:5%;
+    }
+    #header > div:nth-of-type(8) {
+        width:10%;
+        float:left;
+        text-align: left;
+        margin-right:10px;
+        padding-right:1%;
+    }
+    #menu-bar {
+        display:inline;
+        position:fixed;
+        float:right;
+        padding:2px;
+        right:0;
+    }
+    #main {
+        width:90%;
+        font-weight: 600;
+    }
     video {
         margin: 5% 15%;
     }
 }
 
+@media only screen and (max-width:900px) {
+    #header > div:nth-of-type(7) {
+        width:45%;
+    }
+}
+@media only screen and (max-width:800px) {
+    #header > div:nth-of-type(7) {
+        width: 41%;
+    }
+}
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 700px) {
     .flex {
         flex-direction: column;
     }
@@ -588,7 +768,17 @@
     #trusted-md {
         display: block;
     }
-    
+    #header > div:nth-of-type(8) , #header > div:nth-of-type(7) {
+        display:none;
+    }
+    #header > div:nth-of-type(9) {
+        width: 80%;
+        text-align: right;
+    }
+    #header > div:nth-of-type(10) {
+        position : relative;
+        text-align: right;
+    }
     #trusted-big {
         display: none;
     }
@@ -598,6 +788,17 @@
     .text {
         width: 90% in !important;
         margin: 5% 10%
+    }
+    #footer {
+        grid-template-columns:50%;
+        grid-row-gap:40px;
+        margin:3%;
+    }
+    #footer > div {
+        text-align:left;
+    }
+    #copyrights {
+        text-align: center;
     }
 }
 
@@ -629,6 +830,10 @@
     .slidehead, .slidepara {
         margin: auto;
         width: 70%;
+    }
+    #header > div:nth-of-type(9) {
+        width: 74%;
+        text-align: right;
     }
     video {
         width: 90%;
