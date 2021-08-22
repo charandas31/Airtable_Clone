@@ -1,0 +1,9 @@
+/*  */
+body {
+    margin: 0;
+}
+#top-blue-box {
+    padding: 10% 10%;
+    filter: brightness(1.25);
+    width: 100%;
+}

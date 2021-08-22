@@ -85,7 +85,7 @@ window.onscroll = function() {myFunction()};
         if ( l != 0 ){
             newSlideIndex = currentSlide + slideIndex;
         } else {
-
+            
             newSlideIndex = slideIndex;
         }
         if (newSlideIndex > slides.length - 1) {newSlideIndex = 0}
@@ -131,4 +131,4 @@ window.onscroll = function() {myFunction()};
             }, 500);
         }
         return newSlideIndex;
-    }        
+    }
