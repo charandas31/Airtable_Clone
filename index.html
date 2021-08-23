@@ -15,28 +15,11 @@
             <p>Cutting-edge marketing teams run content operations on Airtable. <a href="#">Learn how</a>
             </p>
         </div>
-        <!-- <nav>
-            <div  class="width" id="nav-bar">
-                <div class="f-left">
-                    <a href="#" class="nav-links" id="main"><img src="./Public/logo_small.jpg" alt="">Airtable</a>
-                    <a href="#" class="nav-links">Product</a>
-                    <a href="#" class="nav-links">Solutions</a>
-                    <a href="#" class="nav-links">Enterprise</a>
-                    <a href="#" class="nav-links">Pricing</a>
-                </div>
-                <div class="f-right">
-                    <a href="#" class="nav-links">Resources</a>
-                    <a href="#" class="nav-links">Contact Sales</a>
-                    <a href="#" class="nav-links">Sign in</a>
-                    <a href="#" id="nav-btn">Sign up for free</a>
-                </div>
-            </div>
-        </nav> -->
-        <nav>
-            <div id="header" class="width">
+        <nav id="nav-bar">
+            <div id="header" style="border-bottom:1px solid lightgrey;height:60px;margin-bottom:-10px;">
                 <section class="hide"></section>
                 <div><img id = "airtable-logo" src = "./Public/header_logo.jpg"></div>
-                <div class="hide"> Product <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div class="hide" id="product"> Product <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
                 <div class="hide">Solutions <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
                 <div class="hide">Enterprise</div>
                 <div class="hide"  style="flex-grow:1">Pricing</div>
@@ -47,8 +30,28 @@
                 <div id='menu-bar' onclick = "toggle_list()"><img src="./Public/menu-icon.jpg"></div>
             </div>
     
-            <div style="clear:both;margin-top:2px;" id="menu-list">
-                <div style="border-top:2px solid rgb(184, 182, 182);"><p>Products</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr ></div>
+            <div style="clear:both;" id="menu-list">
+                <div style="margin-top:40px;">
+                    <p onclick="toggle_list_items()">Products</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr >
+                    <div id="menu-list-items">
+                        <div style="display:flex; flex-direction:column">
+                            <div style="flex-basis:50%">
+                                <p>Overview</p>
+                                <p>Integrations</p>
+                                <p>Marketplace</p>
+                                <p>What's new</p>
+                            </div>
+    
+                            <div>
+                                <section>FEATURES</section>
+                                <p>Views</p>
+                                <p>Automations</p>
+                                <p>Sync</p>
+                                <p>Reporting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div><p>Solutions</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-25px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr ></div>
                 <div><p>Enterprise</p><hr ></div>
                 <div><p>Pricing</p><hr ></div>

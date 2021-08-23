@@ -95,23 +95,29 @@
         position: relative;
         width:100%;
         margin: auto;
-        padding:0px 0px;
+        padding:5px 0px;
+        height:50px;
         z-index: 10;
+        border-bottom:2px lightgray solid;
         font-weight: 600;
     }
     #header {
-        margin: auto;
-        width: 100%;
-        max-width: 1350px;
-        height: 50px;
+        background-color: white;
+        width:100%;
+        max-width: 1400px;
+        margin:auto;
     }
     #header > section:nth-of-type(1){
         width: 5%;
-        height:30px;
+        height:20px;
         float:left
     }
     #header > div {
         float:left;
+    }
+    #header > div:hover {
+        color:blue; 
+        cursor: pointer;
     }
     #airtable-logo {
         width:120px; 
@@ -126,14 +132,17 @@
     }
     #header > div:nth-of-type(2) {
         width:7%;
+        
         margin:15px 0px;
     }
     #header > div:nth-of-type(3) {
-        width:8%;   
+        width:8%;
+        
         margin:15px 0px;
     }
     #header > div:nth-of-type(4) {
         width:7%;
+        
         margin:15px 0px;
     }
     #header > div:nth-of-type(5) {
@@ -173,7 +182,7 @@
         display:none;
     }
     #menu-list {
-        padding:0% 3%;
+        padding:0% 5%;
         font-size:19px;
         display:none;   
     }
@@ -181,10 +190,23 @@
         margin:15px 0px;
     }
     #menu-list  hr  {
-        position: relative;
         border:1px solid rgb(235, 231, 231);
     }
-
+    #menu-list-items {
+        display:none;
+    }
+    #menu-list-items > div > div {
+        margin-top:15px;
+    }
+    #menu-list-items > div p {
+        margin:3px;
+        font-size:16px;
+    }
+    #menu-list-items section {
+        font-size:12px;
+        margin: 5px 0px;
+    }
+    
 
     /* Slide show */
     #main-slideshow {

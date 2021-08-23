@@ -1,11 +1,9 @@
 window.onscroll = function() {myFunction()};
         
-    var navbar = document.querySelector('nav');
+    var navbar = document.querySelector('#nav-bar');
     var sticky = 45;
     
     function myFunction() {
-        let pos = sticky-parseInt(window.pageYOffset);
-        pos = pos < 0 ? 0 : pos;
         
         if (window.pageYOffset >= sticky) {
             navbar.style.position = 'fixed';
