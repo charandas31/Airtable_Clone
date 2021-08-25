@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtable | Create apps that perfectly fit your team's needs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="top-red-bar">
+            <p>Cutting-edge marketing teams run content operations on Airtable. <a href="#">Learn how</a>
+            </p>
+        </div>
+        <!-- <nav>
+            <div  class="width" id="nav-bar">
+                <div class="f-left">
+                    <a href="#" class="nav-links" id="main"><img src="./Public/logo_small.jpg" alt="">Airtable</a>
+                    <a href="#" class="nav-links">Product</a>
+                    <a href="#" class="nav-links">Solutions</a>
+                    <a href="#" class="nav-links">Enterprise</a>
+                    <a href="#" class="nav-links">Pricing</a>
+                </div>
+                <div class="f-right">
+                    <a href="#" class="nav-links">Resources</a>
+                    <a href="#" class="nav-links">Contact Sales</a>
+                    <a href="#" class="nav-links">Sign in</a>
+                    <a href="#" id="nav-btn">Sign up for free</a>
+                </div>
+            </div>
+        </nav> -->
+    </header>
+
+       <!-- Header segment -->
+       <div>
+        <div id="header" style="border-bottom:1px solid lightgrey;height:60px;margin-bottom:-10px;">
+            <div><a href = "file:///C:/Users/LENOVO/renu/masai_new/html/Argon-project/Airtable_Project2/index.html"><img id = "airtable-logo" src = "C:\Users\LENOVO\OneDrive\Pictures\Screenshots\airtable_logo.png"></a></div>
+            <div class="hide" id="product"> Product 
+                <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg>
+            </div>
+            <div class="hide">Solutions <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+            <div class="hide">Enterprise</div>
+            <div class="hide"  style="flex-grow:1">Pricing</div>
+            <div class="hide">Resources<svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+            <div >Contact Sales</div>
+            <div> <a href="C:\Users\LENOVO\renu\masai_new\html\Argon-project\signup.html" style="text-decoration-line:none; color:inherit">Sign in</a></div>   
+            <div><button id="signup-btn-header" class="center blue signup-btn"> <a href="C:\Users\LENOVO\renu\masai_new\html\Argon-project\signup.html" style="text-decoration-line:none; color:inherit">Sign up for free</a></button></div>
+            <div id='menu-bar' onclick = "toggle_list()"><img src="C:\Users\LENOVO\OneDrive\Pictures\Screenshots\menu-bar.png"></div>
+        </div>
+
+        <div style="clear:both;" id="menu-list">
+            <div style="margin-top:90px;">
+                <p onclick="toggle_list_items('product-list','product-svg')">Products</p><svg id="product-svg" width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;margin-right:10%"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr >
+                <div id="product-list" class="menu-list-items">
+                    <div>
+                        <div style="flex-basis:50%">
+                            <p>Overview</p>
+                            <p>Integrations</p>
+                            <p>Marketplace</p>
+                            <p>What's new</p>
+                        </div>
+
+                        <div>
+                            <section>FEATURES</section>
+                            <p>Views</p>
+                            <p>Automations</p>
+                            <p>Sync</p>
+                            <p>Reporting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p onclick="toggle_list_items('solutions-list','solutions-svg')">Solutions</p><svg id="solutions-svg" width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;margin-right:10%"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr >
+                <div id="solutions-list" class="menu-list-items">
+                    <div>
+                        <div style="flex-basis:50%">
+                            <section>BY TEAM</section>
+                            <p>Marketing</p>
+                            <p>Product</p>
+                            <p>Operations</p>
+                            <p>HR</p>
+                            <p>Sales </p>
+                            <p>Finance</p>
+                        </div>
+
+                        <div>
+                            <section>TEMPLATES</section>
+                            <p>Content Operations</p>
+                            <p>Product Roadmanp</p>
+                            <p>Project Tracket</p>
+                            <p>Social Media calendar</p>
+                            <p>Marketing Campaign Traker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div><p>Enterprise</p><hr ></div>
+
+            <div><p>Pricing</p><hr ></div>
+
+            <div>
+            <p onclick="toggle_list_items('resources-list','resources-svg')">Resources</p><svg id='resources-svg' width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;margin-right:10%"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr >
+                <div id="resources-list" class="menu-list-items">
+                    <div>
+                        <div style="flex-basis:50%">
+                            <p>Airtable Support</p>
+                            <p>Blog</p>
+                            <p>Downloads</p>
+                            <p>Developers</p>
+                        </div>
+
+                        <div>
+                            <p>Templates</p>
+                            <p>Universe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div><p>Sign in</p><hr></div>
+ 
+        </div>
+    </div>
+
+    <main class="clear">
+        <section id="main-slideshow">
+            <div id="main-text">
+                <h1  id="animate-text">One
+                        <span>workspace.</span>
+                        <span>Source of truth.</span>
+                        <span>platform.</span>
+                    <br>
+                    Endless solutions.
+                </h1>
+                <p id="below-main-text">
+                    Orchestrate powerful business solutions with a single source of truth. The only limit is your
+                    imagination.
+                </p>
+                <div class="signup-btn exp-btn t-align">
+                    Sign up for free
+                </div>
+            </div>
+            
+        </section>
+        <section class="width t-align" id="trusted">
+            <h3>Trusted by teams at over 200,000 of the world’s leading organizations</h3>
+            <img id="trusted-big" src="./Public/trustedBrands.jpg" alt="trusted_big">
+            <img id="trusted-md" src="./Public/trustedBrands_md.jpg" alt="trustedBrands_md">
+            <img id="trusted-sm" src="./Public/trustedBrands_sm.jpg" alt="trustedBrands_sm">
+        </section>
+        
+        <!-- Showcase section containing videos and text -->
+        <section  class="bg-gray">
+            <div id="showcase" class="width">
+                <div class="flex width bg-gray" >
+                    <div class="vdo-box">
+                        <video src="./Public/video/1.mp4" autoplay loop muted preload="auto"></video>
+                    </div>
+                    <div class="text">
+                        <h1 class="sky-blue">Get started in a snap.</h1>
+                        <p>From day one, your team will love the familiarity of a spreadsheet, and the power of a database.</p>
+                        <div class="sky-blue exp-btn t-align">Explore product</div>
+                    </div>
+                </div>
+    
+                <div class="flex width">
+                    <div class="text">
+                        <h1 class="red">Level up as you go.</h1>
+                        <p>Airtable evolves with you and your team, so you can build a solution with increasing sophistication
+                            and capability.</p>
+                        <div class="red exp-btn t-align">Explore use cases</div>
+                    </div>
+                    <div class="vdo-box">
+                        <video src="./Public/video/2.mp4" autoplay loop muted preload="auto"></video>
+                    </div>    
+                </div>
+    
+                <div class="flex width">
+                    <div class="vdo-box">
+                        <video src="./Public/video/3.mp4" autoplay loop muted preload="auto"></video>
+                    </div>
+                    <div class="text">
+                        <h1 class="purple">Create the application you imagined.</h1>
+                        <p>Over 200,000 organizations have built applications on Airtable to modernize their workflows and
+                            deliver better business outcomes.</p>
+                        <div class="purple exp-btn t-align">Explore marketplace</div>
+                    </div>
+                </div> 
+            </div>
+            
+        </section>
+        
+        <section class="overflow-x" >
+            <!-- Slideshow 1-->
+            <a class="prev t-align" onclick="Slides(-1)">&#10094;</a>
+            <a class="next t-align" onclick="Slides(1)">&#10095;</a>
+            <div id="testimonials" class="width">
+                <div id="carousel">
+                    <div class="car-slide">
+                        <div class="car-img" style="background-image: url('./Public/rahul_large.jpg')">
+                        </div>
+                        <div class="car-text">
+                            <h1>“The amount of time I've been able to save with Airtable has been immeasurable, and the more we've worked with it, the more applications we've found. Now the first question I ask is: How do we Airtable this?"</h1>
+                            <div class="slide-footer">
+                                <div>Rahul Kothari<br>Senior Product Marketing Manager</div>
+                                <img src="./Public/frameio.png" alt="frameio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-slide">
+                        <div class="car-img" style="background-image: url('./Public/connie_large.jpg')">
+                        </div>
+                        <div class="car-text">
+                            <h1>“With Airtable, we’re able to build systems and workflow that are custom-made for our business. It’s the only solution that works for the way we work.”</h1>
+                            <div class="slide-footer">
+                                <div>Dr. Cornelia Scheitz<br>Senior Engagement Manager<br>Technology Center </div>
+                                <img src="./Public/autodesk.png" alt="autodesk">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-slide">
+                        <div class="car-img" style="background-image: url('./Public/nick_large.jpg')">
+                        </div>
+                        <div class="car-text">
+                            <h1>“Through Airtable scripts and automations, we’ve totally re-imagined our production tracking to shepherd our products from conception to delivery and enabled a new level of agility for the business.”</h1>
+                            <div class="slide-footer">
+                                <div>Nick Jones<br>Senior Manager of Design Production operations</div>
+                                <img src="./Public/harrys.png" alt="harrys">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-slide">
+                        <div class="car-img" style="background-image: url('./Public/michael_large.jpg')">
+                        </div>
+                        <div class="car-text">
+                            <h1>“Airtable revolutionized the timeline for creating new tools, which we can use to manage everything we do across the spectrum of marketing.”</h1>
+                            <div class="slide-footer">
+                                <div>Michael Alfieri <br>Senior Production Manager, 360 Marketing</div>
+                                <img src="./Public/ae.png" alt="ae">
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <br>
+            <div id="dot-buttons">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        
+        <section class="width">
+            <div class="width t-align bg-gray template-showcase">
+                <h1 class="slidehead">
+                    Get a head start with templates
+                </h1>
+                <p class="slidepara">Inspiring templates for every use case you can imagine. Find what’s right for you and your team.</p>
+                
+                <!-- Slideshow 2 -->
+                <div id="slideshow2" class="width">
+                    <div id="slidetrack">
+                        <div class="slidebox bg-sl-red">
+                            <img src="./Public/marketing-campaign-tracker.png" alt="marketing-campaign-tracker">
+                            <p>Marketing Campaign Tracker</p>
+                        </div><div class="slidebox bg-sl-gray">
+                            <img src="./Public/product-catalog.png" alt="product-catalog">
+                            <p>Product Catalog</p>
+                        </div>
+                        <div class="slidebox bg-sl-orange">
+                            <img src="./Public/product-launch.png" alt="product-launch">
+                            <p>Product Launch</p>
+                        </div>
+                        <div class="slidebox bg-sl-blue">
+                            <img src="./Public/product-planning.png" alt="product-planning">
+                            <p>Product Planning</p>
+                        </div>
+                        <div class="slidebox bg-sl-violet">
+                            <img src="./Public/project-tracker.png" alt="project-tracker">
+                            <p>Project Tracker</p>
+                        </div>
+                        <div class="slidebox bg-sl-orange">
+                            <img src="./Public/bug-tracker.png" alt="bug-tracker">
+                            <p>Bug Tracker</p>
+                        </div>
+                        <div class="slidebox bg-sl-green">
+                            <img src="./Public/content-calendar.png" alt="content-calendar">
+                            <p>Content Calendar</p>
+                        </div>
+                        <div class="slidebox bg-sl-red">
+                            <img src="./Public/marketing-campaign-tracker.png" alt="marketing-campaign-tracker">
+                            <p>Marketing Campaign Tracker</p>
+                        </div><div class="slidebox bg-sl-gray">
+                            <img src="./Public/product-catalog.png" alt="product-catalog">
+                            <p>Product Catalog</p>
+                        </div>
+                        <div class="slidebox bg-sl-orange">
+                            <img src="./Public/product-launch.png" alt="product-launch">
+                            <p>Product Launch</p>
+                        </div>
+                        <div class="slidebox bg-sl-blue">
+                            <img src="./Public/product-planning.png" alt="product-planning">
+                            <p>Product Planning</p>
+                        </div>
+                        <div class="slidebox bg-sl-violet">
+                            <img src="./Public/project-tracker.png" alt="project-tracker">
+                            <p>Project Tracker</p>
+                        </div>
+                        <div class="slidebox bg-sl-orange">
+                            <img src="./Public/bug-tracker.png" alt="bug-tracker">
+                            <p>Bug Tracker</p>
+                        </div>
+                        <div class="slidebox bg-sl-green">
+                            <img src="./Public/content-calendar.png" alt="content-calendar">
+                            <p>Content Calendar</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="sky-blue exp-btn t-align m-auto">Explore all templates</div>
+            </div>
+            <div class="t-align bg-gray template-showcase">
+                <h1 class="slidehead">
+                    Get more from your existing tools
+                </h1>
+                <p class="slidepara">Streamline your workflow with powerful integrations.</p>
+                <div id="slideshow3">
+                    <div id="slidetrack3">
+                        <img src="./Public/slack.png" alt="slack">
+                        <img src="./Public/facebook.png" alt="facebook">
+                        <img src="./Public//gmail.png" alt="gmail">
+                        <img src="./Public/google_forms.png" alt="google_forms">
+                        <img src="./Public//google_sheets.png" alt="google_sheets">
+                        <img src="./Public/jira.png" alt="jira">
+                        <img src="./Public/twitter.png" alt="twitter">
+                        <img src="./Public/microsoft_teams.png" alt="microsoft_teams">
+                        <img src="./Public/slack.png" alt="slack">
+                        <img src="./Public/facebook.png" alt="facebook">
+                        <img src="./Public//gmail.png" alt="gmail">
+                        <img src="./Public/google_forms.png" alt="google_forms">
+                        <img src="./Public//google_sheets.png" alt="google_sheets">
+                        <img src="./Public/jira.png" alt="jira">
+                        <img src="./Public/twitter.png" alt="twitter">
+                        <img src="./Public/microsoft_teams.png" alt="microsoft_teams">
+                    </div>
+
+                </div>
+                <div class="sky-blue exp-btn t-align m-auto">Explore integrations</div>
+            </div>
+        </section>
+
+        <section class="width">
+            <h1 class="slidehead t-align" id="end-head">Take Airtable for a spin</h1>
+            <div class="signup-btn exp-btn t-align m-auto">
+                Sign up for free
+            </div>
+            <p class="t-align">Airtable is free to use for teams of any size. We also offer paid plans with additional storage, features and support.</p>
+            
+        </section>
+        
+    </main>
+    <footer>
+        <!-- footer goes here  -->
+    </footer>
+    <script>
+        // window.onscroll = function() {myFunction()};
+        
+        // var navbar = document.getElementById("nav-bar");
+        // var sticky = document.getElementById("top-red-bar").offsetHeight;
+        
+        // function myFunction() {
+        //   if (window.pageYOffset >= sticky) {
+        //     navbar.classList.add("sticky")
+        //   } else {
+        //     navbar.classList.remove("sticky");
+        //   }
+        // }
+
+        // fade in for text
+        const txts=document.querySelector("#animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=4000,
+                textOutTimer=3500;
+
+         function animateText() {
+            for(let i=0; i<txtsLen-1; i++){
+              txts[i].classList.remove("text-in","text-out");  
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+              if(index == txtsLen-2){
+                  index=0;
+                }
+               else{
+                   index++;
+                 }
+                animateText();
+            },textInTimer); 
+         }
+         
+         window.onload=animateText;
+
+
+        //  Carousel
+        
+        const slides = document.getElementsByClassName("car-slide");
+        const dots = document.getElementsByClassName("dot");
+        let currentSlide = 0;
+        
+        dots[currentSlide].className += " active"
+        function Slides(slideIndex) {
+            currentSlide = showSlides(slideIndex, currentSlide);
+        }
+
+        function showSlideNo(slideIndex) {
+            showSlides(slideIndex, currentSlide);
+        }
+
+        function showSlides(slideIndex, currentSlide) {
+            let i;
+            let newSlideIndex = currentSlide + slideIndex;
+            if (newSlideIndex > slides.length - 1) {newSlideIndex = 0}
+            if (newSlideIndex < 0) {newSlideIndex = slides.length-1}
+            for (i = 0; i < slides.length; i++) {
+                if ( i !== currentSlide ){
+                    slides[i].style.display = "none";  
+                }
+            }
+            dots[currentSlide].className = dots[currentSlide].className.replace(" active", "");
+            
+            let img1 = slides[currentSlide].getElementsByClassName('car-img');
+            let img2 = slides[newSlideIndex].getElementsByClassName('car-img');
+            dots[newSlideIndex].className += " active";
+            slides[newSlideIndex].style.display = "inline-flex";
+            img1.className += 'car-img-sliding';
+            img2.className += 'car-img-sliding';
+            if ( currentSlide < newSlideIndex ){
+                slides[currentSlide].className += " car-slide-out-inc ";
+                slides[newSlideIndex].className += " car-slide-in-inc ";
+                setTimeout(() => {
+                    slides[currentSlide].style.display = "none";
+                }, 600)
+                setTimeout(() => {
+                    slides[currentSlide].className.replace(" car-slide-out-inc ", "");
+                    slides[newSlideIndex].className.replace(" car-slide-in-inc ", "");
+                    img1.className.replace(' car-img-sliding', '');
+                    img2.className.replace(' car-img-sliding', '');
+                }, 500);
+            } else {
+                slides[currentSlide].className += " car-slide-in-dec ";
+                slides[newSlideIndex].className += " car-slide-out-dec ";
+                setTimeout(() => {
+                    slides[currentSlide].style.display = "none";
+                }, 400)
+                setTimeout(() => {
+                    slides[currentSlide].className.replace(" car-slide-in-dec ", "");
+                    slides[newSlideIndex].className.replace(" car-slide-out-dec ", "");
+                    
+                    img1.className.replace(' car-img-sliding', '');
+                    img2.className.replace(' car-img-sliding', '');
+                }, 600);
+            }
+            return newSlideIndex;
+        }       
+
+        // This function toggles the list from the header.
+                function toggle_list() {
+            var parent = document.getElementById('menu-bar');
+            var element = document.getElementById('menu-list');
+
+            var status = element.style.display;
+            if( status !== 'none') 
+            {
+                element.style.display = "none";
+                parent.style.transform = "rotate(0deg)";
+
+            }
+            else 
+            {
+                element.style.display = "inline";
+                parent.style.transform = "rotate(90deg)";
+            }
+        }
+
+        function toggle_list_items(id,svg) {
+            var items = document.getElementById(id);
+            var status = items.style.display;
+            var icon = document.getElementById(svg);
+
+            if( status !== 'none') 
+            {
+                items.style.display = "none";
+                icon.style.transform = 'rotate(270deg)';
+                
+            }
+            else
+            {
+                icon.style.transform = 'rotate(0deg)';
+                items.style.display = "inline";
+            }  
+        } 
+    </script>
+
+</body>
+
+</html>
