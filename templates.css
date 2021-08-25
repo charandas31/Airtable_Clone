@@ -1,0 +1,584 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 100vw;
+  font-family: "GT Eesti Display", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+}
+
+#nav_bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+
+  z-index: 2;
+  background: white;
+}
+#bars {
+  visibility: hidden;
+}
+#nav_bar > div {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+#nav_bar > div > div:hover,
+#nav_bar > div > div a:hover {
+  color: blue;
+}
+#nav_bar > div > a > img {
+  width: 130px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+#nav_bar > div > div {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.menu-button {
+  display: flex;
+  align-items: center;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  z-index: 10 !important;
+  text-align: left;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgb(88, 87, 87);
+}
+.dropdown-menu > p {
+  margin: 10px;
+  color: black;
+}
+.dropdown-menu p:hover {
+  color: blue;
+  text-decoration: none;
+}
+.dropdown-menu .grayC,
+#nav_bar > div > div > a {
+  color: rgb(126, 110, 110);
+  margin-top: 8px;
+  font-size: 13px;
+}
+.right-menu:hover .dropdown-menu {
+  display: block;
+}
+.right-menu:hover .menu-button {
+  background: transparent;
+}
+#nav_bar > div > div i {
+  margin-left: 5px;
+}
+#nav_bar > div > div a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+#nav_bar > div > #blueBtn {
+  background-color: #2d7ff9;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+#nav_bar > div > #blueBtn > a {
+  text-decoration: none;
+  color: white;
+}
+#nav_bar > div > #blueBtn:hover {
+  background-color: #032e6e;
+  color: white;
+}
+
+#mid_content {
+  padding: 20px;
+  display: flex;
+}
+#left_div {
+  height: 100vh;
+  position: sticky;
+  transform: translateZ(0px);
+  top: 20px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+#icon_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#home_icon {
+  background-color: #bfbfbf;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#search_icon {
+  margin-right: 12px;
+}
+
+#search_box {
+  background-color: #bfbfbf;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  margin-left: 10px;
+  color: #bfbfbf;
+  background-color: #f2f2f2;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+}
+#search_box input {
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  width: 80px;
+}
+#list_of_service {
+  height: 585px;
+  border: 1px solid none;
+  overflow-y: scroll;
+  width: 100%;
+  margin-top: 30px;
+  clear: both;
+}
+#list_of_service > div {
+  color: #c9c9c9;
+  font-size: 10px;
+  margin: 0px 0px 15px;
+}
+#list_of_service > p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666666;
+  cursor: pointer;
+}
+#list_of_service > p:hover {
+  color: black;
+}
+#list_of_service > h3 {
+  margin-top: 30px;
+  cursor: pointer;
+}
+#main_content {
+  width: 80%;
+
+  float: right;
+  margin-left: 20px;
+}
+#top {
+  width: 100%;
+}
+#main_content > #top > #first_Flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#main_content > #top > #second_Flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#main_content > #top > #third_Flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#main_content .overlay {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F51D8ycQOSpew9WIDP2Me_pexels-photo-373966-upload.png");
+
+  background-position: center center;
+  mix-blend-mode: multiply;
+  background-size: cover;
+
+  position: absolute;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 0 5px transparent;
+}
+#main_content .boxx {
+  height: 250px;
+  width: 100%;
+  opacity: 0.9;
+  background: rgb(39, 110, 218);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  margin: 10px;
+}
+#main_content h1 {
+  z-index: 1;
+  color: white;
+}
+
+#main_content #color_box01 {
+  width: 100%;
+}
+
+#main_content #color_box02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FTRLvmCoSQ9OYrG2r3Yfz_pexels-photo-474873.jpeg");
+  width: 100%;
+  background-size: cover;
+}
+
+#color_box02 > .overlay {
+  background: rgb(230, 39, 85);
+  background-size: cover;
+}
+
+#main_content #color_box03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fn8taW1kVSb2oOkq4wCye_exploreCoverImages%252FwHQewJl3Tku9OU6MW6X7_jwimshwif14-jeff-sheldon.jpg");
+  grid-area: c;
+  width: 33% !important;
+}
+#color_box03 > .overlay {
+  background: rgb(42, 111, 199);
+}
+#main_content #color_box04 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FNyowWcFoSfaj40BMWDtG_exploreCoverImages%252FHqdWGSA7QQqGE8avD2Ow_f3uyey6ours-nicolai-berntsen.jpg");
+  width: 33% !important;
+}
+#color_box04 > .overlay {
+  background: rgb(180, 29, 69);
+}
+#main_content #color_box05 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Ftn3tW8QrS75kVLwNoIHg_exploreCoverImages%252FmmGMuFSnyLwYE60isAwl_exploreCoverImages%252FbxZIdK7RQ226Ef4FDdOm_jufcqxgcxwa-samuel-zeller.jpg");
+  width: 33% !important;
+}
+#color_box05 > .overlay {
+  background-color: #666;
+}
+#main_content #color_box06 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FfNrd9uBlS46tkBy19ShQ_exploreCoverImages%252FXUbrYMmzQI2LWRxeiCJo_nasa.png");
+  grid-area: f;
+  width: 33%;
+}
+#color_box06 > .overlay {
+  background: rgb(247, 92, 30);
+}
+#main_content #color_box07 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FJawInXKTW2qpiT9Fhhfg_exploreCoverImages%252FZFxxi0tNSdG1u6tug6K3_9hi8ujmsdza-braden-collum.jpg");
+  grid-area: g;
+  width: 33%;
+}
+#color_box07 > .overlay {
+  background: cyan;
+}
+#main_content #color_box08 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FedOQmkPQcGd8CJartzsD_exploreCoverImages%252FjyrGFJGQb2kwL9iF9mK2_emtcwiq2txk-alan-emery.jpg");
+  grid-area: h;
+  width: 33%;
+}
+#color_box08 > .overlay {
+  background: yellow;
+}
+.mid_01 > h2 {
+  margin: 20px;
+  color: #666;
+}
+.mid_01 > .div_boxes h3 {
+  font-weight: 900;
+  text-align: center;
+}
+
+.mid_01 > .div_boxes > .img_plus_text {
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #888888;
+}
+.mid_01 .div_boxes i {
+  text-align: right;
+  color: white;
+  background-color: rgb(235, 37, 70);
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.mid_01 .div_boxes > .img_plus_text {
+  cursor: pointer;
+  margin: 15px;
+}
+.mid_01 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FTRLvmCoSQ9OYrG2r3Yfz_pexels-photo-474873.jpeg");
+}
+.mid_01 .div_boxes .img_div00 {
+  height: 140px !important;
+  width: 100%;
+  mix-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.mid_01 .div_boxes .img_div00:hover {
+  opacity: 0.8;
+}
+.mid_01 .div_boxes h3 {
+  margin: 5px;
+}
+.mid_01 .div_boxes p {
+  font-size: 13px;
+  color: rgb(160, 154, 154);
+}
+.mid_01 .div_boxes .img_div00 + div {
+  padding: 10px;
+}
+.mid_01 > .div_boxes {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  flex-basis: 33%;
+  justify-content: center;
+  width: 100%;
+}
+.mid_01 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fov1cp3ToTz2FnXiM91dT_william-iven-19843-unsplash.jpg");
+}
+.mid_01 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fh1cprqPaTGa9wU6ynnzI_exploreCoverImages%252FtbKYQWtPTW2q1lBLf551_exploreCoverImages%252FJf3M5wTSSnC6SKG6TgrQ_25171507233_6a774fcfc3_k.jpg");
+}
+
+.mid_002 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FwZu6WoFpTwKU27RSTrbP_exploreCoverImages%252FpTXzLfrHQxGNZsHx2qVK_exploreCoverImages%252F0PzqYS7zRByV7jSagoeo_azztu531psm-jakob-owens.jpg");
+}
+.mid_002 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F2LWMIEY4S3q0vdFpGZLQ_exploreCoverImages%252FYp4H1qhxRMq7i5rSocDR_y02jex_b0o0-aaron-burden.jpg");
+}
+.mid_002 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fz22XguvRB6zLe8C7K0UA_tbvsc-xxnuw-raphael-koh.jpg");
+}
+.mid_003 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FLBoIUpzRe6Xjlr3Ghh0g_exploreCoverImages%252F9i5vidWERBuvRqglcBS0_event-1597531_1280.jpg");
+}
+.mid_003 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FPkXhlBvRu2aNaGbceKc5_exploreCoverImages%252F0vcOdULcTC293RKECSce_xxalfz6v9rq-robert-mathews.jpg");
+}
+.mid_003 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FzdmMsyAQou5WHE0gyuoQ_exploreCoverImages%252F1fHDLkrmQdOxV4oaoyA8_udodaha_mh8-annie-spratt.jpg");
+}
+.mid_004 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FXOawPuXfTnSDLgL7amOr_exploreCoverImages%252Fdxp8ILVR2imNYlk6lX3r_jpkfc5_d-di-davide-cantelli.jpg");
+}
+.mid_004 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FQZGOcH8FReaF6JtRyJkF_exploreCoverImages%252FqGARl5B7TKmyGxhhbsNK__c_i5gmzyr0-justin-veenema.jpg");
+}
+.mid_004 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FVziHvU67TGDYbFVu5uvM_exploreCoverImages%252FzgWPRxSBQmKnaZSFF0K9_exploreCoverImages%252Fgm5Usg0wRbaVd9nAeX8o_exploreCoverImages%252FmopX32y4S8gtq7lr8vQQ_iecsdu416pe-paul-nylund.jpg");
+}
+.mid_005 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FcOnNWME3RHyBuL6sH9x0_exploreCoverImages%252FHL3dFyPOTFWs8C3c3FIs_exploreCoverImages%252FxevfPIYlR5WLz6XTxt5E_exploreCoverImages%252FKWWAftgTNuySDeJ4ftTR__m-drbinfa4-eli-francis.jpg");
+}
+.mid_005 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FgzW37v0XT0igXLLiM4dw_exploreCoverImages%252FHFRil8ikQpCbFYJdf8Jk_ggetibd0hvo-tom-sodoge.jpg");
+}
+.mid_005 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FbEWPKxpwTh2sfWiHKhF9_chris-lawton-99165-unsplash.jpg");
+}
+.mid_006 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FNmBYkdJAQu2ZAcw4Qg4Z_exploreCoverImages%252F4h0SYn11QByaLAztYTKw_exploreCoverImages%252F2PUdqEAqS5q8PkBb9nR2_kslnvacfehs-ran-berkovich.jpg");
+}
+.mid_006 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FcNCXWyLQS2otMZ2ZOzQe_exploreCoverImages%252FLEncP9eVTBiNbdqNpqkL_ls0hg4l5joo-luis-llerena.jpg");
+}
+.mid_006 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FDD4RezRTrqzacazxxRGb_exploreCoverImages%252FB3NZV2HNRLWID6wWCAXR_ibpzztr3vxy-tristan-colangelo.jpg");
+}
+.mid_007 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FV9FlS9kSQmWhrtUBmfVx_pexels-photo-197309.jpeg");
+}
+.mid_007 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FV9zjDh3KRFGb9LiJRq5O_pexels-photo.jpg");
+}
+.mid_007 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FZX70BSeBTPWAAR07mcXI_lance-anderson-2669461.jpg");
+}
+.mid_008 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Ftn3tW8QrS75kVLwNoIHg_exploreCoverImages%252FmmGMuFSnyLwYE60isAwl_exploreCoverImages%252FbxZIdK7RQ226Ef4FDdOm_jufcqxgcxwa-samuel-zeller.jpg");
+}
+.mid_008 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FjzlAsQLdQPG9Z0L3wwcq_exploreCoverImages%252FCEowSY2cTXWJEXx0mmJw_exploreCoverImages%252F0qmFxvo1RzictU7CYCi9_syqm-ypaew4-tim-wright.jpg");
+}
+.mid_008 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Foawe9jnTN66twQFgomf0_office-supplies.jpeg");
+}
+.mid_009 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F51D8ycQOSpew9WIDP2Me_pexels-photo-373966-upload.png");
+}
+.mid_009 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FNyowWcFoSfaj40BMWDtG_exploreCoverImages%252FHqdWGSA7QQqGE8avD2Ow_f3uyey6ours-nicolai-berntsen.jpg");
+}
+.mid_009 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/.exploreCoverImages/ad037bef50029f8b4219dd50b56acfd0/dc6ff729");
+}
+.mid_010 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FXpMWc83VRouIaJxoVclz_yfmjalh1s6s-matheus-ferrero.jpg");
+}
+.mid_010 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FZLpwhAhxTh6CRCAAKqsw_exploreCoverImages%252FHhCgAyh2TaeFRmj1v61R_lcnwqwdz38g-d-ng-tr-n-qu-c.jpg");
+}
+.mid_010 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FKCPLHw0SDuUaDrbMgTf8_exploreCoverImages%252FkRZ4wFfwTm8twpqZsMhV_foko4dpxamq-eric-rothermel.jpg");
+}
+.mid_011 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fg4PoLJ2CR9iiLo4KcrPQ_pcrm_smiling.jpg");
+}
+.mid_011 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FvZ9rGRdXRvqkhwpFGWI3_lightcrm_smiling.jpg");
+}
+.mid_011 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages/kOfif4zTRVGsGBzX9Q8L_vasily-koloda-620886-unsplash.jpg");
+}
+.mid_012 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Ffiy3qg4ATwW16OXngy6I_exploreCoverImages%252FMtNNmB9QhyPFUk3UaQ9r_speakers-744579_1920.jpg");
+}
+.mid_012 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fivfkjz6rSnvf6Cj6P8rK_exploreCoverImages%252FshWTobcyRM69EfhQkpFd_books-1840975_1920.jpg");
+}
+.mid_012 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FbDutAhFkT5a31KLK0L1U_exploreCoverImages%252FNAhQwwj4RK6opqfqwMir_o7bp1grkk1s-daniel-mccullough.jpg");
+}
+.mid_013 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FJawInXKTW2qpiT9Fhhfg_exploreCoverImages%252FZFxxi0tNSdG1u6tug6K3_9hi8ujmsdza-braden-collum.jpg");
+}
+.mid_013 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FQ8jdEGNLSOcd9FiLrj8d_exploreCoverImages%252FkgtAUL9QT06ruq5kif7i_pexels-photo-92028.png");
+}
+.mid_013 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FljxzjPLRhyFyYHTJnbuY_exploreCoverImages%252FxiNCKfmZRvCePEAmJHNb_pexels-photo-208621.jpeg");
+}
+.mid_014 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fn8taW1kVSb2oOkq4wCye_exploreCoverImages%252FwHQewJl3Tku9OU6MW6X7_jwimshwif14-jeff-sheldon.jpg");
+}
+.mid_014 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FGlwLSXkPSHuOjO930qGL_ae1zkhoreq8-anthony-delanoix.jpg");
+}
+.mid_014 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FKCPLHw0SDuUaDrbMgTf8_exploreCoverImages%252FkRZ4wFfwTm8twpqZsMhV_foko4dpxamq-eric-rothermel.jpg");
+}
+.mid_015 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fh4OrO6BTeGJURNI5mv4F_exploreCoverImages%252FpmeR5Wh8QiiDhuyV3I2j_w8jisvyjy-8-freddie-marriage.jpg");
+}
+.mid_015 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FY7nfH3xkTFWJJ4iGHVig_exploreCoverImages%252FhOxlxpWS32bn6uPHXKbO_birb.png");
+}
+.mid_015 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fetkd2qSCTti7WGIukQGJ_exploreCoverImages%252FdJr6JAI1QsShsfDe6xHO_desk.png");
+}
+.mid_016 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FaS9sPVSdTjeozqvFxBNQ_pexels-photo-462331.jpeg");
+}
+.mid_016 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FF5fJMhQ1RpunJnPeaHpt_pexels-photo-443383.jpeg");
+}
+.mid_016 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2Fe650VMbSiyDQeHs0Nrl6_pexels-photo-257856.jpeg");
+}
+.mid_017 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/.exploreCoverImages/8bd549e31fb53256e17dce807fc3f5f3/bb58ffb6");
+}
+.mid_017 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/.exploreCoverImages/287662afafcd15d3cb2de77e3dd05613/074c8b55");
+}
+.mid_017 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/.exploreCoverImages/e3ab03fb7117b19045cd92bd0d6021e3/5ba58cfd");
+}
+.mid_018 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FQUwn1sXETKu6gFz7XQvB_exploreCoverImages%252FxLQop8eQpGVkCeAZhYE0_e7rlgujjazc-olu-eletu.jpg");
+}
+.mid_018 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F5GJ3n09T7ODT2uwOONkQ_exploreCoverImages%252FhTXCn5mVSLGZu0s70JqK_vatgbfp7oxa-olu-eletu.jpg");
+}
+.mid_018 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FTvqQ4lmnT4CfSLKHf4CJ_exploreCoverImages%252FSdXtjrUaTPu7eYJpl4Hs_exploreCoverImages%252FxnjztwFzRcqzwlW2Kcb8_exploreCoverImages%252Fw9LIMzGURtKmEs29ykw7_25677213482_dff0c0031a_k.jpg");
+}
+.mid_019 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FedOQmkPQcGd8CJartzsD_exploreCoverImages%252FjyrGFJGQb2kwL9iF9mK2_emtcwiq2txk-alan-emery.jpg");
+}
+.mid_019 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FynRi1Lk5RTyDpblhnysm_t5bva-q_m_y-luis-llerena.jpg");
+}
+.mid_019 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FfNrd9uBlS46tkBy19ShQ_exploreCoverImages%252FXUbrYMmzQI2LWRxeiCJo_nasa.png");
+}
+.mid_020 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/.exploreCoverImages/23d5d722b1c1aecd1a66f04bb69e5e3a/606cd4cd");
+}
+.mid_020 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F6P7UEGLiQLqF6RVDcUGJ_exploreCoverImages%252FzAWswqcpReGigno2Njm6_x5hjlv7nzu4-breather.jpg");
+}
+.mid_020 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/.exploreCoverImages/388e5047ffded157ae839b0d8cedcdb2/2bf9b48b");
+}
+.mid_021 .div_boxes .img_div01 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FW5r3V4KQde1qaNbixtHn_exploreCoverImages%252FkUITEBdERrOxAWKX4yCQ_gwe0dlvd9e0-benjamin-child.jpg");
+}
+.mid_021 .div_boxes .img_div02 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2F2w70TZQkRe20anmJBQrO_exploreCoverImages%252FeZ5n4Fy0SaS6kkRoNVzQ_wn3iop4-j3a-olu-eletu.jpg");
+}
+.mid_021 .div_boxes .img_div03 {
+  background-image: url("https://dl.airtable.com/exploreCoverImages%2FYTOV6WS3TZCFJ1k6lEds_Airtable_investment_dealflow.jpg");
+}
+
+@media only screen and (max-width: 860px) {
+  #nav_bar .dnone {
+    display: none;
+  }
+  #bars {
+    visibility: visible;
+  }
+}
+
+/* Footer */
+#footer {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  grid-gap: 5%;
+  font-size: 14px;
+  height: 300px;
+  margin-top: 150px;
+}
+#footer > div {
+  text-align: center;
+}
+#footer > div {
+  color: rgb(124, 122, 122);
+}
+#footer > div > div {
+  display: flex;
+}
+#footer > div > div > p {
+  margin: 5px;
+  border-bottom: 2px solid rgb(224, 224, 224);
+  cursor: pointer;
+}
+#footer > div > div > p:hover {
+  border-bottom: 2px solid rgb(117, 115, 115);
+}
+#copyrights {
+  font-size: 12px;
+  font-weight: 300;
+}

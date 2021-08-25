@@ -10,10 +10,136 @@
     <style>
         /* */
 
+        #nav_bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        position:sticky !important;
+        top:-10px;
+        
+        z-index: 2;
+        background:white;
+        }
+        #bars {
+        visibility: hidden;
+        }
+        #nav_bar > div {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        }
+        #nav_bar > div > div:hover, #nav_bar > div > div a:hover {
+        color: blue;
+        }
+        #nav_bar > div >a> img {
+        width: 130px;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: pointer;
+        }
+        #nav_bar > div > div {
+        margin: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+        }
+        .menu-button {
+        display: flex;
+        align-items: center;
+        }
+        .dropdown-menu {
+        display: none;
+        position: absolute;
+        background: #ffffff;
+        z-index: 10 !important;
+        text-align: left;
+        padding: 10px 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px rgb(88, 87, 87);
+        }
+        .dropdown-menu > p {
+        margin: 10px;
+        color: black;
+        }
+        .dropdown-menu p:hover {
+        color: blue;
+        text-decoration: none;
+        }
+        .dropdown-menu .grayC, #nav_bar > div > div >a {
+        color: rgb(126, 110, 110);
+        margin-top: 8px;
+        font-size: 13px;
+        }
+        .right-menu:hover .dropdown-menu {
+        display: block;
+        }
+        .right-menu:hover .menu-button {
+        background: transparent;
+        }
+        #nav_bar > div > div i {
+        margin-left: 5px;
+        }
+        #nav_bar > div > div a {
+            text-decoration: none;
+            color:black;
+            font-size: 15px;
+        }
+        #nav_bar > div > #blueBtn {
+        background-color: #2d7ff9;
+        color: white;
+        border-radius: 20px;
+        padding: 5px 10px;
+        text-decoration: none;
+        }
+        #nav_bar > div > #blueBtn > a {
+            text-decoration: none;
+            color:white;
+        }
+        #nav_bar > div > #blueBtn:hover {
+        background-color: #032e6e;
+        color:white;
+        }
+
+                /* Footer */
+        #footer {
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15% 15%;
+        grid-gap: 5%;
+        font-size: 14px;
+        height: 300px;
+        margin-top: 150px;
+        }
+        #footer > div {
+        text-align: center;
+        }
+        #footer > div {
+        color: rgb(124, 122, 122);
+        }
+        #footer > div > div {
+        display: flex;
+        }
+        #footer > div > div > p {
+        margin: 5px;
+        border-bottom: 2px solid rgb(224, 224, 224);
+        cursor: pointer;
+        }
+        #footer > div > div > p:hover {
+        border-bottom: 2px solid rgb(117, 115, 115);
+        }
+        #copyrights {
+        font-size: 12px;
+        font-weight: 300;
+        }
+
+
     </style>
 </head>
 
 <body>
+    <script src="https://kit.fontawesome.com/afe9d36b7f.js" crossorigin="anonymous"></script>
     <header>
         <div id="top-red-bar">
             <p>Cutting-edge marketing teams run content operations on Airtable. <a href="#">Learn how</a>
@@ -36,8 +162,85 @@
                 </div>
             </div>
         </nav> -->
+        <div id="nav_bar">
+            <div>
+                <a href="index.html"><img src="https://www.seekpng.com/png/detail/242-2428394_3-000-in-airtable-credits-for-startup-ucla.png"></a>
+                <div class="right-menu dnone">
+                    <div class="menu-button">
+                        <p>Product</p> <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <p href="#">Overview</p>
+                        <p href="#">Integrations</p>
+                        <p href="#">Marketplace</p>
+                        <p href="#">What's new</p>
+                        <p href="#" class="grayC">FEATURES</p>
+                        <p href="#">View</p>
+                        <p href="#">Automations</p>
+                        <p href="#">Sync</p>
+                        <p href="#">Reporting</p>
+                    </div>
+                </div>
+                <div class="right-menu dnone">
+                    <div class="menu-button">
+                        <p>Solution</p> <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <p href="#" class="grayC">BY TEAM</p>
+                        <p href="#">Marketing</p>
+                        <p href="#">Product</p>
+                        <p href="#">Operations</p>
+                        <p href="#">HR</p>
+                        <p href="#">Sales</p>
+                        <p href="#">Finance</p>
+                        <p href="#" class="grayC">TEMPLATES</p>
+                        <p href="#">Content Operations</p>
+                        <p href="#">Product Roadmap</p>
+                        <p href="#">Project Tracker</p>
+                        <p href="#">Social Media Calender</p>
+                        <p href="#">Marketing Compaign Tracker</p>
+                        <a href="templates.html" class="grayC">See all templates <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="dnone">
+                    <p>Enterprice</p>
+                </div>
+                <div class="dnone">
+                    <a href="pricing.html">Pricing
+                    </a>
+                </div>
+            </div>
+        
+            <div>
+                <div class="right-menu dnone"">
+                        <div class=" menu-button">
+                    <p>Resources</p> <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="dropdown-menu">
+                    <p href="#">Airtable Support</p>
+                    <p href="#">Blog</p>
+                    <p href="#">Downloads</p>
+                    <p href="#">Developers</p>
+                    <p href="#">Templates</p>
+                    <p href="#">Universe</p>
+                </div>
+            </div>
+            <div>
+                <p>Contact Sales</p>
+            </div>
+            <div>
+                <p onclick="gotoSignin()">Sign in</p>
+            </div>
+            <div id="blueBtn">
+                <a href="signup.html">Sign up for free</a>
+            </div>
+            <div id="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        </div>
     </header>
-    <main class="clear">
+    <main class="clear" >
         <section id="main-slideshow">
             <div id="main-text">
                 <h1  id="animate-text">One
@@ -278,6 +481,133 @@
     </main>
     <footer>
         <!-- footer goes here  -->
+        <!-- Footer section -->
+        <div id="footer">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThWAgctEZ-fy0UcDP01Y7k7F4L30F1lxGlTy66FJC5rYqk5Wi81Tp850GDFqo3oM5Fl80&usqp=CAU"
+                    style="width:60px;">
+            </div>
+        
+            <div>
+                <div>
+                    <p>Product</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Inspiration</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Marketplace</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Templates</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>universe</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Pricing</p>
+                    <div></div>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <p>Events</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Case studies</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Security</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Enterprise</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>API</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Integrations</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Download apps</p>
+                    <div></div>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <p>About</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Careers</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Blog</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Creators magazine</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Contact sales</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Press</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Twitter</p>
+                    <div></div>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <p style="border-bottom: 2px solid blue; color:blue">We're hiring!</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Questions?</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Explore our help center</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Creators magazine</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Terms</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Privacy</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p id="copyrights">@Airtable</p>
+                </div>
+            </div>
+        </div>
+
     </footer>
     <script>
         // window.onscroll = function() {myFunction()};
@@ -385,7 +715,11 @@
                 }, 600);
             }
             return newSlideIndex;
-        }        
+        } 
+        
+        function gotoSignin() {
+            window.location.href = "signin.html";
+        }
     </script>
 
 </body>
