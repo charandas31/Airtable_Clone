@@ -95,13 +95,13 @@
         position: relative;
         width:100%;
         margin: auto;
-        padding:5px 0px;
-        height:50px;
+        height:60px;
         z-index: 10;
         border-bottom:2px lightgray solid;
         font-weight: 600;
     }
     #header {
+        padding-top: 5px;
         background-color: white;
         width:100%;
         max-width: 1400px;
@@ -117,6 +117,10 @@
     }
     #header > div:hover {
         color:blue; 
+        cursor: pointer;
+    }
+    #header > div>button:hover {
+        filter: brightness(0.8);
         cursor: pointer;
     }
     #airtable-logo {
@@ -171,9 +175,9 @@
         margin:5px 0px;
     }
     #signup-btn-header {
-        width:150px;
-        height:35px;
-        margin:1% 0.4%; 
+        padding: 5px 0px;
+        margin:1% 0.5%;
+        max-width: 150px;
         font-size:15px;
     }
     #menu-bar {
@@ -206,7 +210,39 @@
         font-size:12px;
         margin: 5px 0px;
     }
-    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background: #ffffff;
+        z-index: 10 !important;
+        text-align: left;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin-top: 5px;
+        box-shadow: 0 2px 2px 2px rgb(0 0 0 / 20%);
+    }
+    .dropdown-menu > p {
+        margin: 2px;
+        color: black;
+    }
+    .dropdown-menu p:hover {
+        color: blue;
+        text-decoration: none;
+    }
+    .dropdown-menu .grayC, #nav_bar > div > div >a {
+        color: rgb(126, 110, 110);
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .right-menu:hover .dropdown-menu {
+        display: block;
+    }
+    .right-menu:hover .menu-button {
+        background: transparent;
+    }
+    i {
+        margin-left: 5px;
+    }
 
     /* Slide show */
     #main-slideshow {
@@ -331,13 +367,15 @@
         filter: brightness(0.75);
     }
     .signup-btn {
-        margin-top: 40px;
-        padding: 10px 0px;
+        padding: 10px 0px !important;
         border: none;
         border-radius: 25px;
         color: white;
         background-color: #1283DA;
-        filter: brightness(1.5);
+    }
+    signup-btn-header:hover {
+        cursor: pointer;
+        filter: brightness(0.8);
     }
     #bottom-sign-up-btn {
         padding-left: 20px;
@@ -740,10 +778,11 @@
         display:none;
     }
     #header > div:nth-of-type(7) {
+        margin-left:5%;
+    }
+    #header > div:nth-of-type(7) {
         width:37%;
         float:left;
-        text-align: right;
-        padding-right:5%;
     }
     #header > div:nth-of-type(8) {
         width:10%;
@@ -752,10 +791,19 @@
         margin-right:10px;
         padding-right:1%;
     }
+    #trusted-bg {
+        display: block;
+    }
+    
+    #trusted-md {
+        display: none;
+    }
+    #trusted-sm {
+        display: none;
+    }
     #menu-bar {
         display:inline;
         position:fixed;
-        float:right;
         padding:2px;
         right:0;
     }
@@ -772,34 +820,75 @@
     #header > div:nth-of-type(7) {
         width:45%;
     }
+    .flex {
+        flex-direction: column;
+    }
+    
+    video {
+        margin: 5% 5%;
+    }
+    .text {
+        width: 90% in !important;
+        margin: 5% 10%
+    }
+    
+    #trusted-md {
+        display: block;
+    }
+    #trusted-sm {
+        display: none;
+    }
+    #trusted-big {
+        display: none;
+    }
 }
 @media only screen and (max-width:800px) {
     #header > div:nth-of-type(7) {
         width: 41%;
     }
+    #trusted-md {
+        display: none;
+    }
+    
+    #trusted-bg {
+        display: none;
+    }
+
+    
+    #trusted-sm {
+        display: block;
+    }
 }
 
 
 @media screen and (max-width: 700px) {
-    .flex {
-        flex-direction: column;
-    }
+    
     #trusted-sm {
-        display: none;
+        display: block;
     }
     #trusted-md {
-        display: block;
+        display: none;
+    }
+    #trusted-bg {
+        display: none;
     }
     #header > div:nth-of-type(8) , #header > div:nth-of-type(7) {
         display:none;
     }
     #header > div:nth-of-type(9) {
-        width: 80%;
+        width: 70%;
         text-align: right;
+        margin-left: 8%;
     }
     #header > div:nth-of-type(10) {
         position : relative;
         text-align: right;
+    }
+    #trusted-md {
+        display: none;
+    }
+    #trusted-sm {
+        display: block;
     }
     #trusted-big {
         display: none;

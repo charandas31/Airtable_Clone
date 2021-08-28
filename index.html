@@ -10,23 +10,73 @@
 </head>
 
 <body>
+    <script src="https://kit.fontawesome.com/afe9d36b7f.js" crossorigin="anonymous"></script>
+    
     <header>
         <div id="top-red-bar">
             <p>Cutting-edge marketing teams run content operations on Airtable. <a href="#">Learn how</a>
             </p>
         </div>
         <nav id="nav-bar">
-            <div id="header" style="border-bottom:1px solid lightgrey;height:60px;margin-bottom:-10px;">
+            <div id="header">
                 <section class="hide"></section>
-                <div><img id = "airtable-logo" src = "./Public/header_logo.jpg"></div>
-                <div class="hide" id="product"> Product <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
-                <div class="hide">Solutions <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div onclick="javascript:location.href='./index.html'"><img id = "airtable-logo" src = "./Public/header_logo.jpg"></div>
+                <div class="right-menu hide">
+                    <div class="menu-button">
+                        Product<i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <p onclick="javascript:location.href='./product.html'">Overview</p>
+                        <p href="#">Integrations</p>
+                        <p href="#">Marketplace</p>
+                        <p href="#">What's new</p>
+                        <p href="#" class="grayC">FEATURES</p>
+                        <p href="#">View</p>
+                        <p href="#">Automations</p>
+                        <p href="#">Sync</p>
+                        <p href="#">Reporting</p>
+                    </div>
+                </div>
+                
+                <div class="right-menu hide">
+                    <div class="menu-button">
+                        Solution<i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <p href="#" class="grayC">BY TEAM</p>
+                        <p href="#">Marketing</p>
+                        <p href="#">Product</p>
+                        <p href="#">Operations</p>
+                        <p href="#">HR</p>
+                        <p href="#">Sales</p>
+                        <p href="#">Finance</p>
+                        <p href="#" class="grayC">TEMPLATES</p>
+                        <p href="#">Content Operations</p>
+                        <p href="#">Product Roadmap</p>
+                        <p href="#">Project Tracker</p>
+                        <p href="#">Social Media Calender</p>
+                        <p href="#">Marketing Compaign Tracker</p>
+                        <a href="./templates.html" class="grayC">See all templates <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
                 <div class="hide">Enterprise</div>
-                <div class="hide"  style="flex-grow:1">Pricing</div>
-                <div class="hide">Resources<svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div class="hide"  style="flex-grow:1" onclick="javascript:location.href='./pricing.html'">Pricing</div>
+                <div class="right-menu hide">
+                    <div class="menu-button">
+                        Resources<i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <p href="#">Airtable Support</p>
+                        <p href="#">Blog</p>
+                        <p href="#">Download</p>
+                        <p href="#">Developers</p>
+                        <p href="#">Templates</p>
+                        <p href="#">Univers</p>
+                    </div>
+                </div>
                 <div >Contact Sales</div>
-                <div>Sign in</div>   
-                <div><button id="signup-btn-header" class="center blue signup-btn"><b>Sign up for free</b></button></div>
+                <div onclick="javascript:location.href='./signin.html'">Sign in</div>   
+                <div onclick="javascript:location.href='./signup.html'"><div id="signup-btn-header" class="signup-btn exp-btn t-align" >Sign up for free</div></div>
                 <div id='menu-bar' onclick = "toggle_list()"><img src="./Public/menu-icon.jpg"></div>
             </div>
     

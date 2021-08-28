@@ -1,6 +1,6 @@
 window.onscroll = function() {myFunction()};
         
-    var navbar = document.querySelector('#nav-bar');
+    var navbar = document.querySelector('nav');
     var sticky = 45;
     
     function myFunction() {
@@ -95,8 +95,6 @@ window.onscroll = function() {myFunction()};
             }
         }
         
-        console.log(newSlideIndex);
-        
         let img1 = slides[currentSlide].getElementsByClassName('car-img')[0];
         let img2 = slides[newSlideIndex].getElementsByClassName('car-img')[0];
         dots[newSlideIndex].className += " active";
@@ -129,4 +127,7 @@ window.onscroll = function() {myFunction()};
             }, 500);
         }
         return newSlideIndex;
+    }
+    function gotoSignin() {
+        window.location.href = "signin.html";
     }
