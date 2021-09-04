@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Airtable</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-bar" class="without-scroll-header">
+            <div id="header">
+                <section class="hide"></section>
+                <div><img id = "airtable-logo" src = "./Public/blue_logo.jpg"></div>
+                <div class="hide" id="product" onclick="javascript:location.href='./product.html'"> Product <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div class="hide" onclick="javascript:location.href='./templates.html'">Solutions <svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div class="hide">Enterprise</div>
+                <div class="hide"  style="flex-grow:1" onclick="javascript:location.href='./pricing.html'">Pricing</div>
+                <div class="hide">Resources<svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:lightgrey;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg></div>
+                <div >Contact Sales</div>
+                <div onclick="javascript:location.href='./signup.html'">Sign in</div>   
+                <div onclick="javascript:location.href='./signup.html'"><button id="signup-btn-header" class="center blue signup-btn sign-up-btn-blue"><b>Sign up for free</b></button></div>
+                <div id='menu-bar' onclick = "toggle_list()"><img src="./Public/menu-icon.jpg"></div>
+            </div>
+    
+            <div style="clear:both;" id="menu-list">
+                <div style="margin-top:40px;">
+                    <p onclick="toggle_list_items()">Products</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr >
+                    <div id="menu-list-items">
+                        <div style="display:flex; flex-direction:column">
+                            <div style="flex-basis:50%">
+                                <p>Overview</p>
+                                <p>Integrations</p>
+                                <p>Marketplace</p>
+                                <p>What's new</p>
+                            </div>
+    
+                            <div>
+                                <section>FEATURES</section>
+                                <p>Views</p>
+                                <p>Automations</p>
+                                <p>Sync</p>
+                                <p>Reporting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div><p>Solutions</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-25px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr ></div>
+                <div><p>Enterprise</p><hr ></div>
+                <div><p>Pricing</p><hr ></div>
+                <div><p>Resources</p><svg width="15" height="15" viewBox="0 0 16 16" style="shape-rendering: geometricprecision; color:rgb(45, 23, 248);transform: rotate(270deg);float:right;margin-top:-30px;"><path fill-rule="evenodd"fill="currentColor" d="M11.293 6.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 9.586l3.293-3.293z"></path></svg><hr ></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="top-blue-box">
+            <h1 class="headslide">
+                The power of a database with the familiarity of a spreadsheet.
+            </h1>
+        </div>
+        <div id="header-active-screen">
+            <div id="active-screen-view" class="flex-2 width">
+                <div><a href="#database">Database</a></div>
+                <div><a href="#view">Views</a></div>
+                <div><a href="#apps">Apps</a></div>
+                <div><a href="#automation">Automation</a></div>
+                <div><a href="#sync">Sync</a></div>
+            </div>
+        </div>
+        <div class="product-page width flex">
+            <div class="text">
+                <h1 class="slidehead">Create with a database that fits your flow.</h1>
+                <p class="slidepara">All the power of a flexible relational data model and more. Add fields for attachments, long text notes, checkboxes, links - even barcodes. Surface the data you need, ditch the data you don’t.</p>
+                <div class="flex"><p class="get-start-text"> Get started for free </p> <svg width="24" height="24" viewBox="0 0 16 16" class="svg-sym"><path fill-rule="evenodd" fill="currentColor" d="M9.826 4.57C9.37 4.262 9 4.455 9 5.01v1H4.006A1.998 1.998 0 0 0 2 8.01c0 1.105.887 2 2.006 2H9v1c0 .553.36.741.803.421l3.89-2.837c.446-.325.44-.858.003-1.18l-3.87-2.843z"></path></svg></div>
+            </div>
+            <div class="slider-view">
+                <div class="slide-pro" id="slider1">
+                    <div class="slider-pro-text flex-2" id="database">
+                        <p class="sliderText" onclick="showSlides(0, false, 'slider1')">Content Calender</p>
+                        <p class="sliderText" onclick="showSlides(1, false, 'slider1')">Product Planner</p>
+                        <p class="sliderText" onclick="showSlides(2, false, 'slider1')">Event Planner</p>
+                    </div>
+                    <div class="image-box">
+                        <div class="slides">
+                            <img src="./Public/EventCalender.jpg" alt="content-calendar">
+                        </div>
+                        <div class="slides">
+                            <img src="./Public/Product-Roadmap.jpg" alt="product-roadmap">
+                        </div>
+                        <div class="slides">
+                            <img src="./Public/EventPlanner.jpg" alt="product-roadmap">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="bg-gray" id="view">
+            <div class="product-page width flex">
+                <div class="slider-view">
+                    <div class="slide-pro" id="slider2">
+                        <div class="slider-pro-text flex-2" >
+                            <p class="sliderText" onclick="showSlides(0, false, 'slider2')">Grid View</p>
+                            <p class="sliderText" onclick="showSlides(1, false, 'slider2')">Calender View</p>
+                            <p class="sliderText" onclick="showSlides(2, false, 'slider2')">Gallery View</p>
+                            <p class="sliderText" onclick="showSlides(3, false, 'slider2')">Kanban View</p>
+                        </div>
+                        <div class="image-box" >
+                            <div class="slides">
+                                <img src="./Public/grid-view.png" alt="Grid-view">
+                            </div>
+                            <div class="slides">
+                                <img src="./Public/calendar.png" alt="calendar">
+                            </div>
+                            <div class="slides">
+                                <img src="./Public/gallery.png" alt="gallery-view">
+                            </div>
+                            <div class="slides">
+                                <img src="./Public/kanban.png" alt="kanban">
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <h1 class="slidehead">Configure the perfect view.</h1>
+                    <p class="slidepara">Create views designed for different use cases. Powerful filtering, sorting, and grouping give you the freedom to arrange your work just the way you like. Choose the right views for your content, and save them for easy access any time.</p>
+                    <div class="flex"><p class="get-start-text"> Explore Airtable views </p> <svg width="24" height="24" viewBox="0 0 16 16" class="svg-sym"><path fill-rule="evenodd" fill="currentColor" d="M9.826 4.57C9.37 4.262 9 4.455 9 5.01v1H4.006A1.998 1.998 0 0 0 2 8.01c0 1.105.887 2 2.006 2H9v1c0 .553.36.741.803.421l3.89-2.837c.446-.325.44-.858.003-1.18l-3.87-2.843z"></path></svg></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="product-page width flex" id="apps">
+            <div class="text">
+                <div class="new">NEW</div>
+                <h1 class="slidehead">Extend your solution with Airtable Apps.</h1>
+                <p class="slidepara">Choose from over 50 prebuilt apps. Bring your data to life with click-to-add apps found in our marketplace.</p>
+                <div class="flex"><p class="get-start-text"> Browse our marketplace </p> <svg width="24" height="24" viewBox="0 0 16 16" class="svg-sym"><path fill-rule="evenodd" fill="currentColor" d="M9.826 4.57C9.37 4.262 9 4.455 9 5.01v1H4.006A1.998 1.998 0 0 0 2 8.01c0 1.105.887 2 2.006 2H9v1c0 .553.36.741.803.421l3.89-2.837c.446-.325.44-.858.003-1.18l-3.87-2.843z"></path></svg></div>
+            </div>
+            <div class="slider-view">
+                <div class="slide-pro" id="slider3">
+                    <div class="slider-pro-text flex-2">
+                        <p class="sliderText" onclick="showSlides(0, false, 'slider3')">Gantt</p>
+                        <p class="sliderText" onclick="showSlides(1, false, 'slider3')">PageDesigner</p>
+                        <p class="sliderText" onclick="showSlides(2, false, 'slider3')">SendGrid</p>
+                        <p class="sliderText" onclick="showSlides(3, false, 'slider3')">Scheduler</p>
+                        <p class="sliderText" onclick="showSlides(4, false, 'slider3')">Create Your Own</p>
+                    </div>
+                    <div class="image-box">
+                        <div class="slides">
+                            <img src="./Public/Gantt.jpg" alt="gantt">
+                        </div>
+                        <div class="slides">
+                            <img src="./Public/page_designer.jpg" alt="PageDesigner">
+                        </div>
+                        <div class="slides">
+                            <img src="./Public/sendgrid.jpg" alt="sendgrid">
+                        </div>
+                        <div class="slides">
+                            <img src="./Public/scheduler.jpg" alt="scheduler">
+                        </div>
+                        <div class="slides">
+                            <img src="./Public/scout.jpg" alt="scout">
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="t-align">
+            <h1>Infinite extensibility.</h1>
+            <h3 style="color: gray;">Build your own app with JavaScript and React.</h3>
+            <div class="flex" style="width: 10%; margin: -0.5% auto 4%; font-size: 16px;"><p class="get-start-text">Learn more</p> <svg width="24" height="24" viewBox="0 0 16 16" class="svg-sym"><path fill-rule="evenodd" fill="currentColor" d="M9.826 4.57C9.37 4.262 9 4.455 9 5.01v1H4.006A1.998 1.998 0 0 0 2 8.01c0 1.105.887 2 2.006 2H9v1c0 .553.36.741.803.421l3.89-2.837c.446-.325.44-.858.003-1.18l-3.87-2.843z"></path></svg></div>
+        </div>
+        <section class="bg-gray" id="automation">
+            <div class="product-page width flex">
+                <div class="slider-view">
+                    <div class="slide-pro"  id="slider4">
+                        <div class="slider-pro-text flex-2">
+                            <p class="sliderText" onclick="showSlides(0, false, 'slider4')">Send notifications</p>
+                            <p class="sliderText" onclick="showSlides(1, false, 'slider4')">Create tasks</p>
+                            <p class="sliderText" onclick="showSlides(2, false, 'slider4')">Integrate tools</p>
+                            <p class="sliderText" onclick="showSlides(3, false, 'slider4')">Run custom code</p>
+                        </div>
+                        <div class="image-box">
+                            <div class="slides">
+                                <img src="./Public/send_notifications.png" alt="send_notifications">
+                            </div>
+                            <div class="slides">
+                                <img src="./public/create_tasks.png" alt="create_tasks">
+                            </div>
+                            <div class="slides">
+                                <img src="./Public/integrate_tools.png" alt="integrate_tools">
+                            </div>
+                            <div class="slides">
+                                <img src="./Public/run_custom_code.png" alt="run_custom_code">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text ">
+                    <div class="new">NEW</div>
+                    <h1 class="slidehead">Put Airtable Automations to work for you.</h1>
+                    <p class="slidepara">Help your team go faster and focus on the work that matters. Create custom notifications, automate redundant tasks, and orchestrate work via integrations.</p>
+                    <div class="flex"><p class="get-start-text"> Explore Airtable automation </p> <svg width="24" height="24" viewBox="0 0 16 16" class="svg-sym"><path fill-rule="evenodd" fill="currentColor" d="M9.826 4.57C9.37 4.262 9 4.455 9 5.01v1H4.006A1.998 1.998 0 0 0 2 8.01c0 1.105.887 2 2.006 2H9v1c0 .553.36.741.803.421l3.89-2.837c.446-.325.44-.858.003-1.18l-3.87-2.843z"></path></svg></div>
+                </div>
+            </div>
+        </section>
+        
+
+        <div>
+            <div class="product-page width flex">
+                <div class="text">
+                    <h1 class="slidehead">Integrate with all your favorite apps.</h1>
+                    <p class="slidepara">Connect your workflow to hundreds of apps and services, or access your content programmatically with our robust API.</p>
+                    <div class="flex"><p class="get-start-text"> See all integrations </p> <svg width="24" height="24" viewBox="0 0 16 16" class="svg-sym"><path fill-rule="evenodd" fill="currentColor" d="M9.826 4.57C9.37 4.262 9 4.455 9 5.01v1H4.006A1.998 1.998 0 0 0 2 8.01c0 1.105.887 2 2.006 2H9v1c0 .553.36.741.803.421l3.89-2.837c.446-.325.44-.858.003-1.18l-3.87-2.843z"></path></svg></div>
+                </div>
+                <div class="img-prd-page" id="integrate">
+                    <img src="./Public/integrations.png" alt="integrations">
+                </div>
+            </div>
+            <section class="bg-gray">
+                <div class="product-page width flex">
+                    <div class="img-prd-page">
+                        <img src="./Public/sync.png" alt="sync">
+                    </div>
+                    <div class="text" id="sync">
+                        <div class="new">NEW</div>
+                        <h1 class="slidehead">Interconnect with Airtable Sync.</h1>
+                        <p class="slidepara">Share a source of truth table with other teams inside your company or beyond.</p>
+                        <div class="flex"><p class="get-start-text"> Explore Airtable Sync </p> <svg width="24" height="24" viewBox="0 0 16 16" class="svg-sym"><path fill-rule="evenodd" fill="currentColor" d="M9.826 4.57C9.37 4.262 9 4.455 9 5.01v1H4.006A1.998 1.998 0 0 0 2 8.01c0 1.105.887 2 2.006 2H9v1c0 .553.36.741.803.421l3.89-2.837c.446-.325.44-.858.003-1.18l-3.87-2.843z"></path></svg></div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="product-page width flex-2" >
+                <div class="text">
+                    <h1 class="slidehead">Collaborate with anyone, at any time, from anywhere.</h1>
+                    <p class="slidepara">Edit, comment, and collaborate in real time. Our native mobile and desktop apps sync changes across everyone’s devices.</p>
+                    <div class="flex"><p class="get-start-text"> Download Airtable </p> <svg width="24" height="24" viewBox="0 0 16 16" class="svg-sym"><path fill-rule="evenodd" fill="currentColor" d="M9.826 4.57C9.37 4.262 9 4.455 9 5.01v1H4.006A1.998 1.998 0 0 0 2 8.01c0 1.105.887 2 2.006 2H9v1c0 .553.36.741.803.421l3.89-2.837c.446-.325.44-.858.003-1.18l-3.87-2.843z"></path></svg></div>
+                </div>
+                <div class="img-prd-page">
+                    <img src="./Public/download.png" alt="download">
+                </div>
+            </div>
+        </div>
+        <div id="bottom-box">
+            <h1 class="slidehead" style="max-width: 700px; margin: 0px auto; color: white;">Build an incredible app today</h1>
+            <div class="signup-btn exp-btn t-align m-auto" id="bottom-sign-up-btn" style="color: blue; background-color:white; font-weight: 500">Get started for free</div>
+            <p style="padding: 2% 38% 0%; font-size: 12px; text-align: center;">Airtable is free to use for teams of any size. We also offer paid plans with additional features, storage, and support.</p>
+        </div>
+    </main>
+    <footer>
+        <div id="footer" class="width">
+            <div>
+                <a href="#">
+                    <img src="./Public/logo_small.jpg">
+                </a>
+                
+            </div>
+    
+            <div>
+                <div><p>Product</p><div></div></div>
+                <div><p>Inspiration</p><div></div></div>
+                <div><p>Marketplace</p><div></div></div>
+                <div><p>Templates</p><div></div></div>
+                <div><p>universe</p><div></div></div>
+                <div><p>Pricing</p><div></div></div>
+            </div>
+    
+            <div>
+                <div><p>Events</p><div></div></div>
+                <div><p>Case studies</p><div></div></div>
+                <div><p>Security</p><div></div></div>
+                <div><p>Enterprise</p><div></div></div>
+                <div><p>API</p><div></div></div>
+                <div><p>Integrations</p><div></div></div>
+                <div><p>Download apps</p><div></div></div>
+            </div>
+    
+            <div>
+                <div><p>About</p><div></div></div>
+                <div><p>Careers</p><div></div></div>
+                <div><p>Blog</p><div></div></div>
+                <div><p>Creators magazine</p><div></div></div>
+                <div><p>Contact sales</p><div></div></div>
+                <div><p>Press</p><div></div></div>
+                <div><p>Twitter</p><div></div></div>
+            </div>
+    
+            <div>
+                <div><p style="border-bottom: 2px solid blue; color:blue">We're hiring!</p><div></div></div>
+                <div><p style="border-bottom: none; margin-bottom: 2px; padding-bottom: 0px; font-weight: 400;">Questions?</p><div></div></div>
+                <div><p style="margin-top: 2px; margin-bottom: 55px;">Explore our help center</p><div></div></div>
+                <div><p>Terms</p><div></div></div>
+                <div><p>Privacy</p><div></div></div>        
+                <div><p id="copyrights">@Airtable</p></div>
+            </div>
+        </div>
+    </footer>
+    <script src="product.js"></script>
+</body>
+</html>

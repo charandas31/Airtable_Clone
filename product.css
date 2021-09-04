@@ -1,0 +1,150 @@
+/*  */
+body {
+    margin: 0;
+}
+#top-blue-box {
+    padding: 5% 0%;
+    width: 100%;
+    background-color: #2d7ff9;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#top-blue-box h1 {
+    padding: 0% 10%;
+}
+#header-active-screen {
+    height: 40px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+}
+#active-screen-view div{
+    margin: 2% 2.5%;
+    font-weight: 500;
+    font-size: 14px
+}
+#active-screen-view div a:hover, .active-scroll {
+    color: #2d7ff9;
+}
+#active-screen-view a {
+    text-decoration: none;
+    color: #000000;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+#active-screen-view {
+    width: 80%;
+    max-width: 500px;
+    float: left;
+    margin-left: 10%;
+}
+.without-scroll-header {
+    color: white !important;
+    background-color: #2d7ff9 !important;   
+    border-bottom: none !important;
+}
+.sign-up-btn-blue {
+    background-color: white !important;
+    color: #2d7ff9 !important;
+}
+.product-page {
+    margin: 50px auto;
+}
+.product-page .text{
+    width: 30%;
+}
+.product-page .slider
+.text p+p{
+    width: 50%;
+}
+.svg-sym {
+    shape-rendering: geometricPrecision;
+    margin-top: 18px;
+    color:#2d7ff9;
+    margin-left:5px;
+}
+.get-start-text {
+    border-bottom: 2px solid #2d7ff9;;
+    color:#2d7ff9;;
+    font-size: 18px;
+    font-weight: 600px;
+}
+.product-page {
+    padding: 4% 0% 5%;
+    justify-content: space-between;
+}
+.product-page .text{
+    width: 33%;
+}
+.text h1 {
+    padding-top : 15%;
+}
+
+.product-page .slider-view {
+    width: 60%;
+}
+.slidehead{
+    font-weight: 600;
+    padding: 3% 0%;
+    font-size: 48px !important;
+}
+.image-box img {
+    padding-top: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+.slider-pro-text {
+    gap: 5%;
+}
+.slider-pro-text p{
+    border-bottom: 3px solid lightgray;
+    color: lightgray;
+    padding-bottom: 5px;
+}
+.active1, .slider-pro-text p:hover {
+    color: black !important;
+    cursor: pointer;
+    border-bottom: 3px solid black !important;
+}
+.img-prd-page {
+    width: 60%;
+}
+.img-prd-page img {
+    width: 100%;
+    margin-top: 10%;
+}
+#collab > .img-prd-page > img {
+    margin-top: 5% !important;
+}
+
+#bottom-box {
+    padding: 2% 0%;
+    color: white;
+    background-color: #2d7ff9;
+}
+#integrate img {
+    margin-top: 20%;
+}
+.flex-2 {
+    display: flex;
+}
+.new {
+    background-color: rgb(243, 81, 81);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    width: fit-content;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    padding: 2px 7px 4px;
+    border-radius: 40px;
+}
+.new + .slidehead{
+    padding-top: 0% !important;
+}
+#sync > .new  {
+    margin-top: 45% !important;
+}

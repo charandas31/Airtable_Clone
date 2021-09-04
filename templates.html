@@ -60,7 +60,7 @@
         </div>
     
         <div>
-            <div class="right-menu dnone"">
+            <div class="right-menu dnone">
                             <div class=" menu-button">
                 <p>Resources</p> <i class="fas fa-angle-down"></i>
             </div>
@@ -93,7 +93,7 @@
                 <div id="home_icon"><i class="fas fa-home"></i></div>
                 <div id="search_box">
                     <div id="search_icon"><i class="fas fa-search"></i></div>
-                    <div id="search_inp"><input type="text" id="keyword"placeholder="Search"></div>
+                    <div id="search_inp"><input type="text" id="keyword" placeholder="Search"></div>
                 </div>
             </div> 
             <div id="list_of_service">
@@ -183,7 +183,7 @@
                         <div class="img_div00 img_div02"><i class="fas fa-calendar-check" style="background-color: cyan;"></i></div>
                         <div class="text_content">
                             <h3>Social Media Calendar</h3>
-                            <p "context">World-class social media teams move fast. Part content calendar, part culture calendar, this social template helps you
+                            <p class="context">World-class social media teams move fast. Part content calendar, part culture calendar, this social template helps you
                             wrangle the unwrangle-able by showcasing your important events and dates directly alongside your posts. This template
                             also makes it easy to see what content is coming down the...</p>
                         </div>
@@ -953,9 +953,25 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        const keyword = document.getElementById('keyword');
+        const content = document.getElementsByClassName('text_content');
 
+        function searchKey(key){
+            key = key.toLowerCase();
+            for ( let i = 0; i < content.length; i++ ){
+                if ( content[i].querySelector('h3').innerText.toLowerCase().includes(key) || content[i].querySelector('p').innerText.toLowerCase().includes(key) || key == "" ){
+                    content[i].parentElement.style.display = "inline-block";
+                } else {
+                    content[i].parentElement.style.display = "none";    
+                }
+            }
+        }
+
+        keyword.addEventListener('input', e => {
+            searchKey(e.target.value);
+        })
+    </script>
 </body>
 </html>
-<script src="templates.js">
-
-</script>
