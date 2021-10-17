@@ -170,8 +170,12 @@ body {
   color: #666666;
   cursor: pointer;
 }
-#list_of_service > p:hover {
-  color: black;
+#list_of_service a {
+  text-decoration: none;
+  color: #666666;
+}
+#list_of_service > p > a:hover {
+  color: black !important;
 }
 #list_of_service > h3 {
   margin-top: 30px;
